@@ -1,12 +1,36 @@
 {
-  "title": "Lord of the Flies",
-  "storyline": "The book focuses on a group of British boys stranded on an uninhabited island and their disastrous attempt to govern themselves.",
-  "authors": ["William Golding"],
-  "genres": ["allegory"],
-  "characters": ["Piggy", "Jack", "Ralph", "Roger", "Simon", "Sam", "Eric"],
-  "pages": 224,
-  "ISBN": "9780399501487",
-  "language": "english",
-  "publisher": "Faber and Faber",
-  "publication_date": "1954-17-09"
+    "title": "Lord of the Flies",
+    "ISBN": "9780399501487",
+    "authors": ["William Golding"],
+    "storyline": "The book focuses on a group of British boys stranded on an uninhabited island and their disastrous attempt to govern themselves.",
+    "genres": [
+        "allegory"
+    ],
+    "characters": [
+      "Piggy", "Jack", "Ralph", "Roger", "Simon", "Sam", "Eric"
+    ],
+    "pages": 224,
+    "language": "english",
+    "publisher": "Faber and Faber",
+    "publication_date": "1954-17-09",
+    "copies_sold": 100200000,
+    "book_type": "fiction",
+    "source": [
+        {
+            "audio_books":
+                {
+                }
+        },
+        {
+            "e-books":
+                {}
+        },
+        {
+            "physical":
+              {
+                "_id": 1,
+                "link": "https://amzn.to/3avBBy2"
+                }
+        }
+    ]
 }

@@ -1,16 +1,37 @@
 {
-  "title": "King's Cage",
-  "storyline": "In this breathless third installment to Victoria Aveyard’s bestselling Red Queen series, allegiances are tested on every side. And when the Lightning Girl's spark is gone, who will light the way for the rebellion?",
-  "authors": ["Victoria Aveyard"],
-  "genres": [
-    "horror",
+    "title": "King's Cage",
+    "ISBN": "ISBN0062310712",
+    "authors": ["Victoria Aveyard"],
+    "storyline": "In this breathless third installment to Victoria Aveyard’s bestselling Red Queen series, allegiances are tested on every side. And when the Lightning Girl's spark is gone, who will light the way for the rebellion?",
+    "genres":
+    ["horror",
     "mystery",
     "Science Fiction"
-  ],
-  "characters": ["Kilorn Warren", "Gisa Barrow", "Tiberias Calore Cal VII", "Mare Molly Barrow", "Maven Calore"],
-  "pages": 528,
-  "ISBN": "ISBN0062310712",
-  "language": "english",
-  "publisher": "HarperTeen",
-  "publication_date": "2017-02-07"
+    ],
+    "characters": [
+      "Kilorn Warren", "Gisa Barrow", "Tiberias Calore Cal VII", "Mare Molly Barrow", "Maven Calore"
+    ],
+    "pages": 528,
+    "language": "english",
+    "publisher": "HarperTeen",
+    "publication_date": "2017-02-07",
+    "copies_sold": 5411,
+    "book_type": "fiction",
+    "source": [
+        {
+            "audio_books":
+                {}
+        },
+        {
+            "e-books":
+                {}
+        },
+        {
+            "physical":
+                {
+                  "_id": 1,
+                  "link": "https://amzn.to/2J7anCU"
+                }
+        }
+    ]
 }
