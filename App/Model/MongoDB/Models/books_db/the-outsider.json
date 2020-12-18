@@ -13,5 +13,29 @@
   "ISBN": "1501180983",
   "language": "english",
   "publisher": "Scribner",
-  "publication_date": "2018-05-22"
+  "publication_date": "2018-05-22",
+  "copies_sold": 700000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 29,
+                            "link": "https://amzn.to/2Kg9xnP"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 29,
+                            "link": "https://amzn.to/3mzrCu2"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 29,
+                            "link": "https://amzn.to/3r3vuqR"
+                        }
+                },
 }

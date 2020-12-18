@@ -1,5 +1,5 @@
 {
-    "title": "The Alchemist",
+    "title": "The Alchemist:: A Fable About Following Your Dream",
     "storyline": "Paulo Coelho's masterpiece tells the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found.",
     "authors": ["Paulo Coelho"],
     "genres": [
@@ -12,6 +12,30 @@
     "ISBN": "9780061122415",
     "language": "english",
     "publisher": "HarperOne",
-    "publication_date": "1993-04-25"
+    "publication_date": "1993-04-25",
+    "copies_sold": 152789,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 25,
+                            "link": "https://amzn.to/38kdujc"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 25,
+                            "link": "https://amzn.to/3aoq1Vu"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 25,
+                            "link": "https://amzn.to/3h0mXjV"
+                        }
+                },
   }
   

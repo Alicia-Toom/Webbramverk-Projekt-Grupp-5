@@ -10,5 +10,29 @@
   "ISBN": "0345391802",
   "language": "english",
   "publisher": "Del Rey",
-  "publication_date": "1995-09-27"
+  "publication_date": "1995-09-27",
+  "copies_sold": 450000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 27,
+                            "link": "https://amzn.to/2WvjGzi"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 27,
+                            "link": "https://amzn.to/34mV2FK"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 27,
+                            "link": "https://amzn.to/2IZpy0G"
+                        }
+                },
 }

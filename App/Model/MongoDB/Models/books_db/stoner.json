@@ -22,5 +22,29 @@
   "ISBN": "9781590171998",
   "language": "english",
   "publisher": "Viking Press",
-  "publication_date": "1965-06-01"
+  "publication_date": "1965-06-01",
+  "copies_sold": 500000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 23,
+                            "link": "https://amzn.to/38hIa4Q"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 23,
+                            "link": "https://amzn.to/3p7zgxk"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 23,
+                            "link": "https://amzn.to/3rjvAe6"
+                        }
+                },
 }

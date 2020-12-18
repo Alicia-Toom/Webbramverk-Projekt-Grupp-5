@@ -12,5 +12,29 @@
   "ISBN": "ISBN0316341681",
   "language": "english",
   "publisher": "Little, Brown Books for Young Readers",
-  "publication_date": "2017-03-28"
+  "publication_date": "2017-03-28",
+   "copies_sold": 700000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 24,
+                            "link": "https://amzn.to/3raMxY4"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 24,
+                            "link": "https://amzn.to/3nAqVlB"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 24,
+                            "link": "https://amzn.to/2KBZTvw"
+                        }
+                },
 }

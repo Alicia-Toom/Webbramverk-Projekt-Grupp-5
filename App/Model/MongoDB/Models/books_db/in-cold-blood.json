@@ -1,16 +1,38 @@
 {
-  "title": "In Cold Blood",
-  "storyline": "On November 15, 1959, in the small town of Holcomb, Kansas, four members of the Clutter family were savagely murdered by blasts from a shotgun held a few inches from their faces. There was no apparent motive for the crime, and there were almost no clues. As Truman Capote reconstructs the murder and the investigation that led to the capture, trial, and execution of the killers, he generates both mesmerizing suspense and astonishing empathy. At the center of his study are the amoral young killers Perry Smith and Dick Hickcock, who, vividly drawn by Capote, are shown to be reprehensible yet entirely and frighteningly human. In Cold Blood is a seminal work of modern prose, a remarkable synthesis of journalistic skill and powerfully evocative narrative.",
-  "authors": ["Truman Capote"],
-  "genres": [
-  	"crime fiction", 
-  	"true crime", 
-  	"non-fiction"
-  ],
-  "characters": ["Perry Smith","Dick Hickcock","Herb Clutter","Bonnie Clutter","Nancy Clutter","Kenyon Clutter","Alvin Dewey","Susan Kidwell","Bobby Rupp"],
-  "pages": 343,
-  "ISBN": "0-679-74558-0",
-  "language": "english",
-  "publisher": "Random House",
-  "publication_date": "1966-01-17"
+    "title": "In Cold Blood",
+    "ISBN": "0-679-74558-0",
+    "authors": ["Truman Capote"],
+    "storyline": "On November 15, 1959, in the small town of Holcomb, Kansas, four members of the Clutter family were savagely murdered by blasts from a shotgun held a few inches from their faces. There was no apparent motive for the crime, and there were almost no clues. As Truman Capote reconstructs the murder and the investigation that led to the capture, trial, and execution of the killers, he generates both mesmerizing suspense and astonishing empathy. At the center of his study are the amoral young killers Perry Smith and Dick Hickcock, who, vividly drawn by Capote, are shown to be reprehensible yet entirely and frighteningly human. In Cold Blood is a seminal work of modern prose, a remarkable synthesis of journalistic skill and powerfully evocative narrative.",
+    "genres": [
+      "crime fiction",
+      "true crime",
+      "non-fiction"
+    ],
+    "characters": [
+      "Perry Smith","Dick Hickcock","Herb Clutter","Bonnie Clutter","Nancy Clutter","Kenyon Clutter","Alvin Dewey","Susan Kidwell","Bobby Rupp"
+    ],
+    "pages": 343,
+    "language": "english",
+    "publisher": "Random House",
+    "publication_date": "1966-01-17",
+    "copies_sold": 445524,
+    "book_type": "fiction",
+    "source": [
+        {
+            "audio_books":
+                {}
+        },
+        {
+            "e-books":
+                {
+                }
+        },
+        {
+            "physical":
+                {
+                    "_id": 12,
+                    "link": "https://amzn.to/38hH2hC"
+                }
+        }
+    ]
 }

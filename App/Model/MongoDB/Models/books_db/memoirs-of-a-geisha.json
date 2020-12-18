@@ -1,10 +1,12 @@
 {
-  "title": "Memoirs of a Geisha",
-  "storyline": "The novel, told in first person perspective, tells the story of a fictional geisha working in Kyoto, Japan, before, during and after World War II and ends with her being relocated to New York City",
-  "authors": ["Arthur Golden"],
-  "genres": ["Historical fiction novel"],
-  "characters":
-    [
+    "title": "Memoirs of a Geisha",
+    "ISBN": "0-375-40011-7",
+    "authors": ["Arthur Golden"],
+    "storyline": "The novel, told in first person perspective, tells the story of a fictional geisha working in Kyoto, Japan, before, during and after World War II and ends with her being relocated to New York City",
+    "genres": [
+        "Historical fiction novel"
+    ],
+    "characters": [
       "Nitta Sayuri",
       "Mr. Bekku",
       "Mr. Tanaka Ichiro",
@@ -13,11 +15,30 @@
       "Mameha",
       "Chairman Iwamura Ken",
       "Pumpkin",
-      "Nobu Toshikazu",
+      "Nobu Toshikazu"
     ],
-  "pages": 448,
-  "ISBN": "0-375-40011-7",
-  "language": "English",
-  "publisher": "Alfred A. Knopf",
-  "publication_date": "1997-09-27",
+    "pages": 448,
+    "language": "English",
+    "publisher": "Alfred A. Knopf",
+    "publication_date": "1997-09-27",
+    "copies_sold": 1235555,
+    "book_type": "fiction",
+    "source": [
+        {
+            "audio_books":
+                {
+                }
+        },
+        {
+            "e-books":
+                {}
+        },
+        {
+            "physical":
+                {
+                  "_id": 17,
+                  "link": "https://amzn.to/3p3tooX"
+                }
+        }
+    ]
 }
