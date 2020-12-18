@@ -1,0 +1,69 @@
+		------Projekt grundläggning------
+				  14:e December
+Projekt ideér
+
+1. webscraping för jobb
+2. IMDB fast för böcker/ljudböcker
+3. 
+
+
+
+Kommunikation:
+
+Discord för kontakt
+
+Börja med att gå igenom i grupp och sedan prova på mer parprogrammering.
+
+
+
+Struktur:
+Lägga upp en mall för hur alla variabler skall se ut
+
+Alla mappar börjar med storbokstav, alla filnamn är i lowercase.
+
+
+
+GitHub:
+
+Gärna använda issues.
+
+
+
+Dagordning:
+
+Mötas nästan varje dag? klockan 9?
+gå igenom pullrequests.
+Uppdatera varandra vad vi gjort. 
+Parprogrammering? Framförallt vid nyinförning i projektet.
+
+
+
+Migrationsverktyg:
+
+Skapa all databas först, och migrationshantera eventuella ändringar och tillägg.
+
+
+
+Namngivning:
+
+Försöka ha beskrivande namn, undvika förkorta variabler
+
+
+
+Regler och struktur:
+
+Försök hålla er till samma struktur, och längden på rader.
+Vill man göra en kommentar, gör en sammanfattande kommentar om funktionen. (inga onödiga kommentarer)
+
+
+
+Inte göra mer än vad man kommit överens om:
+
+Inga större bekymmer som vi ser, så länge vi jobbar med issues och möten varje dag innan vi börjar.
+
+
+
+Projektledare:
+
+Vi börjar utan projektledare, men eventuellt att vi delar in arbetsområdena som "backend", "frontend", "data".
+Eller att vi delar in den i flera delar som "mötesansvarig".
