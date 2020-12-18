@@ -11,5 +11,29 @@
   "ISBN": "0965773604",
   "language": "english",
   "publisher": "J. B. Lippincott & Co",
-  "publication_date": "1960-07-11"
+  "publication_date": "1960-07-11",
+  "copies_sold": 1200000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 32,
+                            "link": "https://amzn.to/3nxDWwm"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 32,
+                            "link": "https://amzn.to/37vRLFP"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 32,
+                            "link": "https://amzn.to/3mzuwiq"
+                        }
+                },
 }

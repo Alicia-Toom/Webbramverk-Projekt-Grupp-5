@@ -14,5 +14,29 @@
     "ISBN": "9781435288232",
     "language": "english",
     "publisher": "Doubleday (US) Transworld & Bantam Books (UK)",
-    "publication_date": "2003-03-18"
+    "publication_date": "2003-03-18",
+    "copies_sold": 600000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 26,
+                            "link": "https://amzn.to/37xsueG"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 26,
+                            "link": "https://amzn.to/3raYg8Q"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 26,
+                            "link": "https://amzn.to/34q8Pv5"
+                        }
+                },
 }
