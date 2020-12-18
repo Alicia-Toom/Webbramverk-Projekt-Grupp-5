@@ -1,26 +1,48 @@
 {
-    "title": "Fire",
-    "storyline": "It is not a peaceful time in the Dells. The young King Nash clings to his throne while rebel lords in the north and south build armies to unseat him. The mountains and forests are filled with spies and thieves and lawless men.",
-    "authors": ["Kristin Cashore"],
-    "genres": [
-      "fantasy fiction",
-      "young adult",
-      "adventure",
-      "romance"
-    ],
-    "characters": [
-        "Brocker",
-        "Roen",
-        "Nash",
-        "Brigan",
-        "Leck",
-        Garan",
-        Archer",
-        "Fire"
-    ],
-    "pages": 480,
-    "ISBN": "0803734611",
-    "language": "English",
-    "publisher": "Dial Books",
-    "publication_date": "2009-10-05"
-  }
+  "title": "Fire",
+  "ISBN": "0803734611",
+  "authors": ["Kristin Cashore"],
+  "storyline": "It is not a peaceful time in the Dells. The young King Nash clings to his throne while rebel lords in the north and south build armies to unseat him. The mountains and forests are filled with spies and thieves and lawless men.",
+  "genres": [
+    "fantasy fiction",
+    "young adult",
+    "adventure",
+    "romance"
+  ],
+  "characters": [
+    "Brocker",
+    "Roen",
+    "Nash",
+    "Brigan",
+    "Leck",
+    "Garan",
+    "Archer",
+    "Fire"
+  ],
+  "pages": 480,
+  "language": "English",
+  "publisher": "Dial Books",
+  "publication_date": "2009-10-05",
+  "copies_sold": 476000,
+  "book_type": "fiction",
+  "source": [
+    {
+      "audio_books": {
+        "_id": 9,
+        "link": "https://www.amazon.com/Fire-Kristin-Cashore-audiobook/dp/B002RNBMDM/"
+      }
+    },
+    {
+      "e-books": {
+        "_id": 9,
+        "link": "https://www.amazon.com/Fire-Graceling-Realm-Book-2-ebook/dp/B002URBQHC/"
+      }
+    },
+    {
+      "physical": {
+        "_id": 9,
+        "link": "https://www.amazon.com/Fire-Graceling-Kristin-Cashore/dp/0803734611/"
+      }
+    }
+  ]
+}

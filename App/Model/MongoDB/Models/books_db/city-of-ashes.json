@@ -1,12 +1,38 @@
 {
   "title": "City of Ashes",
+  "ISBN": "9781416972242",
+  "authors": ["Cassandra Clare"],
   "storyline": "Sixteen-year-old Clary Fray just wishes that her life would go back to normal. But what's normal when you're a demon-slaying Shadowhunter and you can suddenly see Downworlders like werewolves, vampires, and faeries? She continues trying to make sense of the swiftly changing events and relationships in her life as she becomes further involved with the Shadowhunters and their pursuit of demons and discovers some terrifying truths about her parents, her brother Jace, and her boyfriend Simon.",
-  "authors": ["9781481455978"],
   "genres": ["Fantasy Fiction, Adventure fiction"],
-  "characters": ["Clary Fray", "Jace Herondale", "Alec Lightwood"],
+  "characters": [
+    "Clary Fray",
+    "Jace Herondale",
+    "Alec Lightwood"
+  ],
   "pages": 224,
-  "ISBN": "9780399501487",
   "language": "english",
   "publisher": "Margaret K. McElderry Books",
-  "publication_date": "2015-1-09"
+  "publication_date": "2015-1-09",
+  "copies_sold": 1500000,
+  "book_type": "fiction",
+  "source": [
+    {
+      "audio_books": {
+        "_id": 2,
+        "link": "https://www.audible.co.uk/pd/City-of-Ashes-Audiobook/B00TVOTBII"
+      }
+    },
+    {
+      "e-books": {
+        "_id": 2,
+        "link": "https://www.amazon.com/City-Ashes-Mortal-Instruments-Book-ebook/dp/B001NLKZUA/"
+      }
+    },
+    {
+      "physical": {
+        "_id": 2,
+        "link": "https://www.amazon.se/Mortal-Instruments-City-Ashes-Book/dp/1406307637/"
+      }
+    }
+  ]
 }

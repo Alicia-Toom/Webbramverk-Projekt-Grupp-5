@@ -22,19 +22,22 @@
     "book_type": "fiction",
     "source": [
         {
-            "audio_books":
-                {
-                    "_id": 1,
-                    "link": "https://www.amazon.com/1984-New-Classic-Edition-audiobook/dp/B000Q6ZLOI"
-                }
+            "audio_books": {
+                "_id": 1,
+                "link": "https://www.amazon.com/1984-New-Classic-Edition-audiobook/dp/B000Q6ZLOI"
+            }
         },
         {
-            "e-books":
-                {}
+            "e-books": {
+                "_id": 1,
+                "link": "https://www.amazon.com/1984-George-Orwell-ebook/dp/B003JTHWKU"
+            }
         },
         {
-            "physical":
-                {}
+            "physical": {
+                "_id": 1,
+                "link": "https,://www.amazon.se/1984-George-Orwell/dp/0141036141/"
+            }
         }
     ]
 }

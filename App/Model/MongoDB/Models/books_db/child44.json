@@ -1,21 +1,43 @@
 {
-    "title": "Child 44",
-    "storyline": "A thriller novel by British writer Tom Rob Smith. This is the first novel in a trilogy featuring former MGB Agent Leo Demidov, who investigates a series of gruesome child murders in Joseph Stalin's Soviet Union.",
-    "authors": ["Tom Rob Smith"],
-    "genres": [
-      "Historical fiction",
-      "Thriller",
-      "Mystery",
-      "Soviet Union fiction"
-    ],
-    "characters": [
-        "Leo Demidov",
-        "Raisa Demidova",
-        "General Nesterov"
-    ],
-    "pages": 439,
-    "ISBN": "9780446402389",
-    "language": "english",
-    "publisher": "Grand Central Publishing",
-    "publication_date": "1949-06-08"
-  }
+  "title": "Child 44",
+  "ISBN": "9780446402385",
+  "authors": ["Tom Rob Smith"],
+  "storyline": "A thriller novel by British writer Tom Rob Smith. This is the first novel in a trilogy featuring former MGB Agent Leo Demidov, who investigates a series of gruesome child murders in Joseph Stalin's Soviet Union.",
+  "genres": [
+    "Historical fiction",
+    "Thriller",
+    "Mystery",
+    "Soviet Union fiction"
+  ],
+  "characters": [
+    "Leo Demidov",
+    "Raisa Demidova",
+    "General Nesterov"
+  ],
+  "pages": 439,
+  "language": "english",
+  "publisher": "Grand Central Publishing",
+  "publication_date": "1949-06-08",
+  "copies_sold": 230000,
+  "book_type": "fiction",
+  "source": [
+    {
+      "audio_books": {
+        "_id": 8,
+        "link": "https://www.audible.co.uk/pd/Child-44-Audiobook/B004FTSGHQ"
+      }
+    },
+    {
+      "e-books": {
+        "_id": 8,
+        "link": "https://www.amazon.com/Child-44-Trilogy-Book-ebook/dp/B0011UJMK2/"
+      }
+    },
+    {
+      "physical": {
+        "_id": 8,
+        "link": "https://www.amazon.com/Child-44-Tom-Rob-Smith/dp/0446402389/"
+      }
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 {
     "title": "Charlie and the Chocolate Factory",
-    "storyline": "11-year-old Charlie Bucket lives in poverty in a small house with his parents and four grandparents. One day, he buys a chocolate, Wonka Bar, and is invited to visit the chocolatier Willy Wonka.",
+    "ISBN": "9780142403884",
     "authors": ["Roald Dahl"],
+    "storyline": "11-year-old Charlie Bucket lives in poverty in a small house with his parents and four grandparents. One day, he buys a chocolate, Wonka Bar, and is invited to visit the chocolatier Willy Wonka.",
     "genres": ["Children's fantasy novel"],
     "characters": [
         "Willy Wonka",
@@ -11,8 +12,30 @@
         "Violet Beauregarde"
     ],
     "pages": 192,
-    "ISBN": "9780142403884",
     "language": "english",
     "publisher": "Puffin Books",
-    "publication_date": "2005-06-02"
-  }
+    "publication_date": "2005-06-02",
+    "copies_sold": 12000000,
+     "book_type": "fiction",
+     "source": [
+         {
+             "audio_books": {
+                "_id": 7,
+                "link": "https://www.audible.co.uk/pd/Charlie-and-the-Chocolate-Factory-Audiobook/B00MQ0ZL6U"
+             }
+         },
+         {
+             "e-books": {
+                 "_id": 7,
+                 "link": "https://www.amazon.com/Charlie-Chocolate-Factory-Colour-Roald-ebook/dp/B01LOHTSBO/"
+             }
+         },
+         {
+             "physical": {
+                 "_id": 7,
+                 "link": "https://www.amazon.com/Charlie-Chocolate-Factory-Howard-Hughes/dp/0141361530/"
+             }
+         }
+
+     ]
+}

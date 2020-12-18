@@ -1,7 +1,8 @@
 {
   "title": "Death in Yellowstone: Accidents and Follhardiness in the First National Park",
-  "storyline": "Yellowstone National Park has a long history of deaths by everything from earthquakes to bear attacks, poison gas, and lightning. Since 1870 there have been 300 deaths, all compiled together by a longtime chronicler of Yellowstone's history.",
+  "ISBN": "1570980217",
   "authors": ["Lee H. Whittlesey"],
+  "storyline": "Yellowstone National Park has a long history of deaths by everything from earthquakes to bear attacks, poison gas, and lightning. Since 1870 there have been 300 deaths, all compiled together by a longtime chronicler of Yellowstone's history.",
   "genres": [
     "history",
     "geography",
@@ -12,11 +13,35 @@
   "David Kirwan",
   "Joy Hanny",
   "William J. Tesinsky",
-  "George Weber",
+  "George Weber"
   ],
   "pages": 276,
-  "ISBN": "1570980217",
   "language": "english",
   "publisher": "Roberts inehart Publishersr",
-  "publication_date": "1995-06-01"
+  "publication_date": "1995-06-01",
+  "copies_sold": 90000,
+  "book_type": "non-fiction",
+  "source": [
+    {
+      "audio_books":
+      {
+        "_id": 3,
+        "link": "https://www.amazon.com/Death-in-Yellowstone-audiobook/dp/B01MCUJLEY/"
+      }
+    },
+    {
+      "e-books":
+      {
+        "_id": 3,
+        "link": "https://www.amazon.com/Death-Yellowstone-Accidents-Foolhardiness-National-ebook/dp/B00HRX0PQM/"
+      }
+    },
+    {
+      "physical":
+      {
+        "_id": 3,
+        "link": "https://www.amazon.com/Death-Yellowstone-Accidents-Foolhardiness-National/dp/1570984506"
+      }
+    }
+  ]
 }

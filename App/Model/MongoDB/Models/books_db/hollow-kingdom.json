@@ -1,15 +1,37 @@
 {
   "title": "Hollow Kingdom",
-  "storyline": "One pet crow fights to save humanity from an apocalypse in this uniquely hilarious debut from a genre-bending literary author.",
+  "ISBN": "1538745828",
   "authors": ["Kira Jane Buxton"],
+  "storyline": "One pet crow fights to save humanity from an apocalypse in this uniquely hilarious debut from a genre-bending literary author.",
   "genres": [
     "fiction",
     "fantasy"
   ],
   "characters": ["Big Jim"],
   "pages": 320,
-  "ISBN": "1538745828",
   "language": "english",
   "publisher": "Grand Central Publishing",
-  "publication_date": "2019-08-06"
+  "publication_date": "2019-08-06",
+  "copies_sold": 398000,
+  "book_type": "fiction",
+  "source": [
+    {
+      "audio_books": {
+        "_id": 11,
+        "link": "https://www.amazon.com/Hollow-Kingdom-Kira-Jane-Buxton-audiobook/dp/B07RYXPLD1/"
+      }
+    },
+    {
+      "e-books": {
+        "_id": 11,
+        "link": "https://www.amazon.com/Hollow-Kingdom-Kira-Jane-Buxton-ebook/dp/B07L2V6H2M/"
+      }
+    },
+    {
+      "physical": {
+        "_id": 11,
+        "link": "https://www.amazon.com/Hollow-Kingdom-Kira-Jane-Buxton/dp/"
+      }
+    }
+  ]
 }

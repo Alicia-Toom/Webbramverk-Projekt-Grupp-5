@@ -1,18 +1,51 @@
 {
-    "title": "Ender's Game",
-    "storyline": "Andrew 'Ender' Wiggin thinks he is playing computer simulated war games; he is, in fact, engaged in something far more desperate. The result of genetic experimentation, Ender may be the military genius Earth desperately needs in a war against an alien enemy seeking to destroy all human life.",
-    "authors": ["Orson Scott Card"],
-    "genres": [
-      "science fiction",
-      "young adult",
-      "fiction",
-      "fantasy"
-    ],
-    "characters": ["Dink", "Bernard, Valentine Wiggin", "Peter Wiggin", "Mazer Rackham", "Alai", "Hyrum Graff"],
-    "pages": 256,
-    "ISBN": "0812533569",
-    "language": "english",
-    "publisher": "Tor Books",
-    "publication_date": "1985-01-15"
-  }
+  "title": "Ender's Game",
+  "ISBN": "0812533569",
+  "authors": ["Orson Scott Card"],
+  "storyline": "Andrew 'Ender' Wiggin thinks he is playing computer simulated war games; he is, in fact, engaged in something far more desperate. The result of genetic experimentation, Ender may be the military genius Earth desperately needs in a war against an alien enemy seeking to destroy all human life.",
+  "genres": [
+    "science fiction",
+    "young adult",
+    "fiction",
+    "fantasy"
+  ],
+  "characters": [
+    "Dink",
+    "Bernard",
+    "Valentine Wiggin",
+    "Peter Wiggin",
+    "Mazer Rackham",
+    "Alai",
+    "Hyrum Graff"
+  ],
+  "pages": 256,
+  "language": "english",
+  "publisher": "Tor Books",
+  "publication_date": "1985-01-15",
+  "copies_sold": 9000000,
+  "book_type": "fiction",
+  "source": [
+    {
+      "audio_books":
+      {
+        "_id": 5,
+        "link": "https://www.audible.co.uk/pd/Enders-Game-Audiobook/B004FTAH8C"
+      }
+    },
+    {
+      "e-books":
+      {
+        "_id": 5,
+        "link": "https://www.amazon.com/Enders-Game-Ender-Quartet-Book-ebook/dp/B003G4W49C/"
+      }
+    },
+    {
+      "physical":
+      {
+        "_id": 5,
+        "link": "https://www.amazon.com/Enders-Ender-Quintet-Orson-Scott/dp/0765394863/"
+      }
+    }
+  ]
+}
   
