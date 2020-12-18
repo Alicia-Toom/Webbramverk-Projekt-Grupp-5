@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 from abc import ABC
-from db_settings import *
+from .db_settings import *
 
 client = MongoClient(f'mongodb://{MONGO_USER}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}')
 db = client.ildb
