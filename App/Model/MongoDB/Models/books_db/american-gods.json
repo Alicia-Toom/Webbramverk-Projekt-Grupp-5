@@ -1,15 +1,34 @@
 {
     "title": "American Gods",
-    "storyline": "A perennial favorite of readers worldwide, American Gods tells the story of ex-con Shadow Moon, who emerges from prison and is recruited to be bodyguard, driver, and errand boy for the enigmatic Mr. Wednesday.",
+    "ISBN": "0062472100",
     "authors": ["Neil Gaiman"],
-    "genres": [
-      "fantasy"
-    ],
+    "storyline": "A perennial favorite of readers worldwide, American Gods tells the story of ex-con Shadow Moon, who emerges from prison and is recruited to be bodyguard, driver, and errand boy for the enigmatic Mr. Wednesday.",
+    "genres": ["fantasy"],
     "characters": ["Shadow Moon", "Laura Moon"],
     "pages": 784,
-    "ISBN": "0062472100",
     "language": "english",
     "publisher": "William Morrow",
-    "publication_date": "2016-08-16"
-  }
-  
+    "publication_date": "2016-08-16",
+    "copies_sold": 1850000,
+    "book_type": "fiction",
+    "source": [
+        {
+            "audio_books": {
+                "_id": 6,
+                "link": "https://www.audible.co.uk/pd/American-Gods-The-Tenth-Anniversary-Edition-A-Full-Cast-Production-Audiobook/B079N81V58"
+            }
+        },
+        {
+            "e-books": {
+                "_id": 6,
+                "link": "https://www.amazon.com/American-Gods-Tenth-Anniversary-Novel-ebook/dp/B004YW4L5K/"
+            }
+        },
+        {
+            "physical": {
+                "_id": 6,
+                "link": "https://www.amazon.com/American-Gods-Tenth-Anniversary-Novel/dp/0062472100/"
+            }
+        }
+    ]
+}

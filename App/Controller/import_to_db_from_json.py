@@ -11,4 +11,3 @@ def import_jsons_as_books(path):
                 json_data = json.load(f)
                 new_book = Book(json_data)
                 new_book.save()
-

@@ -1,17 +1,39 @@
 {
   "title": "Gone Girl",
-  "storyline": "Gone Girl follows the story of a married couple, Nick Dunne and Amy Elliott Dunne, from the time they meet and up until Amy goes missing under suspicious circumstances and Nick eventually becomes the prime suspect in her dissaperance.",
+  "ISBN": "978-0307588364",
   "authors": ["Gillian Flynn"],
+  "storyline": "Gone Girl follows the story of a married couple, Nick Dunne and Amy Elliott Dunne, from the time they meet and up until Amy goes missing under suspicious circumstances and Nick eventually becomes the prime suspect in her dissaperance.",
   "genres": [
-    "thriller"
-    "suspense"
-    "mystery"
+    "thriller",
+    "suspense",
+    "mystery",
     "crime"
   ],
   "characters": ["Nick Dunne", "Amy Elliott Dunne", "Jim Gilpin", "Rhonda Boney", "Desi Collings"],
   "pages": 432,
-  "ISBN": "978-0307588364",
   "language": "english",
   "publisher": "Crown Publishing Group",
-  "publication_date": "2012-06-05"
+  "publication_date": "2012-06-05",
+  "copies_sold": 4500000,
+  "book_type": "fiction",
+  "source": [
+    {
+      "audio_books": {
+        "_id": 10,
+        "link": "https://www.amazon.com/Gone-Girl-Gillian-Flynn-audiobook/dp/B0088UT8IO/"
+      }
+    },
+    {
+      "e-books": {
+        "_id": 10,
+        "link": "https://www.amazon.com/Gone-Girl-Novel-Gillian-Flynn-ebook/dp/B006LSZECO/"
+      }
+    },
+    {
+      "physical": {
+        "_id": 10,
+        "link": "https://www.amazon.com/Gone-Girl-Gillian-Flynn/dp/030758836X/"
+      }
+    }
+  ]
 }
