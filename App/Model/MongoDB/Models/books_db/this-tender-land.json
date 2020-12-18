@@ -12,5 +12,29 @@
   "ISBN": "1476749299",
   "language": "english",
   "publisher": "Atria Books",
-  "publication_date": "2019-09-03"
+  "publication_date": "2019-09-03",
+  "copies_sold": 800000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 31,
+                            "link": "https://amzn.to/3nxDWwm"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 31,
+                            "link": "https://amzn.to/2KGwpMU"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 31,
+                            "link": "https://amzn.to/3ap0MCo"
+                        }
+                },
 }

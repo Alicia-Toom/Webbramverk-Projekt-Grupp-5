@@ -10,6 +10,29 @@
     "ISBN": "0061689246",
     "language": "english",
     "publisher": "HarperCollins",
-    "publication_date": "2008-12-23"
+    "publication_date": "2008-12-23",
+    "copies_sold": 250000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 22,
+                            "link": "https://amzn.to/3nva4AA"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 22,
+                            "link": "https://amzn.to/3h2V9vg"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 22,
+                            "link": "https://bit.ly/3p48h66"
+                        }
+                }
   }
-  

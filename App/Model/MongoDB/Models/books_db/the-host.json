@@ -14,6 +14,33 @@
     "ISBN": "0316068047",
     "language": "english",
     "publisher": "Little, Brown and Company",
-    "publication_date": "2008-05-06"
-  }
-  
+    "publication_date": "2008-05-06",
+    "copies_sold": 800000,
+            "book_type": "fiction",
+            "source": [
+                {
+                    "audio_books":
+                        {
+                            "_id": 28,
+                            "link": "https://amzn.to/2WpDjc3"
+                        }
+                },
+                {
+                    "e-books":
+                        {
+                            "_id": 28,
+                            "link": "https://amzn.to/3mzrCu2"
+                        }
+                },
+                {
+                    "physical":
+                        {
+                            "_id": 28,
+                            "link": "https://amzn.to/2WtzfYA"
+                        }
+                },
+}
+
+
+
+
