@@ -1,0 +1,16 @@
+{
+  "name": "Tom Rob Smith",
+  "background": "Tom Rob Smith (born 1979) is an English author, screenwriter and producer.",
+  "links": ["https://en.wikipedia.org/wiki/Tom_Rob_Smith"],
+  "birth_date": "1979",
+  "book_names": [
+    "Child 44",
+    "The Secret Speech"
+    "Agent 6",
+    "The Farm"
+  ],
+  "genres": [
+    "thriller",
+    "mystery"
+  ]
+}
