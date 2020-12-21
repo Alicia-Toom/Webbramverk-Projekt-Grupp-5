@@ -1,15 +1,7 @@
 {
   "name": "George Orwell",
   "background": "George Orwell, originally born as Eric Arthur Blair, was an English novelist and journalist. His work is marked by keen intelligence and wit, a profound awareness of social injustice, an intense, revolutionary opposition to totalitarianism, a passion for clarity in language and a belief in democratic socialism.",
-<<<<<<< HEAD
-  "links": [
-    {
-      "wikipedia": "http://en.wikipedia.org/wiki/George_Orwell"
-    }
-    ],
-=======
   "links": ["http://en.wikipedia.org/wiki/George_Orwell"],
->>>>>>> 1bb62a91ec3d1bbb196c68918025f19b4387423f
   "birth_date": "25 June 1903",
   "death_date": "21 January 1950",
   "alternate_names": [
