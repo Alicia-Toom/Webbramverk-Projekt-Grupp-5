@@ -1,0 +1,20 @@
+{
+  "name": "John Williams",
+  "background": "John Edward Williams (August 29, 1922 – March 3, 1994) was an American author, editor and professor. He was best known for his novels Butcher's Crossing (1960), Stoner (1965), and Augustus (1972) which won a U.S. National Book Award.",
+  "links": [
+    {
+      "wikipedia": "https://en.wikipedia.org/wiki/John_Edward_Williams"
+    }
+    ],
+  "birth_date": "29 August 1922",
+  "death_date": "3 March 1994",
+  "alternate_names": [
+    "John Edward Williams"
+  ],
+  "book_names": [
+    "Stoner"
+  ],
+  "genres": [
+    "campus novel"
+  ]
+}
