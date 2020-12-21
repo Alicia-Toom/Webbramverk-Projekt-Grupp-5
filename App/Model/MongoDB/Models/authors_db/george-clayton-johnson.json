@@ -1,0 +1,13 @@
+{
+  "name": "George Clayton Johnson",
+  "background": "George Clayton Johnson was an American science fiction writer, best known for co-writing with William F. Nolan the novel Logan's Run, the basis for the MGM 1976 film.",
+  "links": ["https://en.wikipedia.org/wiki/George_Clayton_Johnson"],
+  "birth_date": "25 June 1903",
+  "death_date": "25 December 2015",
+  "book_names": [
+    "Logan's run"
+  ],
+  "genres": [
+    "science fiction"
+  ]
+}
