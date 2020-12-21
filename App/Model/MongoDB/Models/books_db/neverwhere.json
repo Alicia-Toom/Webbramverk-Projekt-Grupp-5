@@ -21,17 +21,23 @@
         {
             "audio_books":
                 {
-                }
+                    "_id": 19,
+                    "link": "https://amzn.to/2J6BduH"
+               }
         },
         {
             "e-books":
-                {}
+                {
+                    "_id": 19,
+                    "link": "https://amzn.to/2WAO5MI"
+               }
         },
         {
             "physical":
                 {
                     "_id": 19,
-                    "link": "https://amzn.to/2KFbw4J"}
+                    "link": "https://amzn.to/2KFbw4J"
+                }
         }
     ]
 }
