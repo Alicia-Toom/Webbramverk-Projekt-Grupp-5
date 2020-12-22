@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internet Literature DataBase</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/main_style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <nav>
+                <li>ILDB</li>
+                <li>Books</li>
+                <li>Authors</li>
+                <li>Login</li>
+            </nav>
+        </div>
+    <div class="search-menu">
+        <input type="text" placeholder="Find books, authors or users" align="middle"\>
+    </div>
+        <div id="content">
+            {% block content %}
+            {%  endblock %}
+        </div>
+    <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
