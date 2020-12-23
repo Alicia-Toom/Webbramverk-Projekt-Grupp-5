@@ -52,3 +52,8 @@ li {
 .carousel-indicators {
     bottom: -50px;
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 25px;
+}
