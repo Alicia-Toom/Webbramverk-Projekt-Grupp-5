@@ -29,7 +29,7 @@ def download_book_covers(path):
         if file.endswith(".json"):
             with open(os.path.join(path, file), encoding='utf-8') as f:
                 json_data = json.load(f)
-                cover_url = f"http://covers.openlibrary.org/b/isbn/{json_data['ISBN']}-M.jpg?default=false"
+                cover_url = f"http://covers.openlibrary.org/b/isbn/{json_data['ISBN']}-L.jpg?default=false"
                 cover_file = os.path.join(path, file.replace(".json", ".jpg"))
 
                 try:
