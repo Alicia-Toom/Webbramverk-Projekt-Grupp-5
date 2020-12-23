@@ -5,12 +5,12 @@
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
   <ol class="carousel-indicators">
-    {% for row in row.rows() %}
+    {% for row in carousel.rows() %}
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ loop.index - 1 }}" class="{% if loop.first %} active {% endif %}"></li>
     {% endfor %}
   </ol>
   <div class="carousel-inner">
-    {% for row in row.rows() %}
+    {% for row in carousel.rows() %}
     <div class="carousel-item {% if loop.first %} active {% endif %}">
       <div class="row">
       {% for book in row %}
