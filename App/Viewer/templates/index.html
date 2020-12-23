@@ -1,9 +1,44 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>This is the index page</h1>
-    <img src="../static/images/books/Stardust.jpg" width="20%" height="30%">
-    <img src="../static/images/books/Stardust.jpg" width="20%" height="30%">
-    <img src="../static/images/books/Stardust.jpg" width="20%" height="30%">
-    <h3 id="text-content"></h3>
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    {% for row in row.rows() %}
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ loop.index - 1 }}" class="{% if loop.first %} active {% endif %}"></li>
+    {% endfor %}
+  </ol>
+  <div class="carousel-inner">
+    {% for row in row.rows() %}
+    <div class="carousel-item {% if loop.first %} active {% endif %}">
+      <div class="row">
+      {% for book in row %}
+        <div class="col-12 col-md d-flex align-items-center justify-content-center">
+          <div class="carousel-item-book">
+            <img src="/books/{{ book._id }}/cover" class="carousel-item-book-cover">
+            <div class="carousel-item-book-caption">
+              <h5><a href="/books/{{ book._id }}">{{ book.title }}</a></h5>
+              <!--
+              <p>{{ book.storyline }}</p>
+              -->
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+
 {%  endblock %}
