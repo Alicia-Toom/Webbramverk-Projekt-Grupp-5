@@ -1,3 +1,5 @@
+from Controller.books_controller import books
+from Controller.commons import Carousel
 from bson import ObjectId
 from flask import Flask, render_template, send_file, make_response, abort
 
@@ -6,10 +8,12 @@ from Model.MongoDB.Models.books import Book
 app = Flask(__name__)
 app.debug = True
 
+app.register_blueprint(books)
+
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', carousel=Carousel(Book.all()))
 
 
 @app.route('/books/<book_id>/cover')
