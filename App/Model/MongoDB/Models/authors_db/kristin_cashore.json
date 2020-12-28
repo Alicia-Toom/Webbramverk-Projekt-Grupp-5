@@ -1,7 +1,12 @@
 {
   "name": "Kristin Cashore",
+  "OLID": "OL7413363A",
   "background": "Kristin Cashore (born 1976) is an American young adult and fantasy writer.",
-  "links": ["https://en.wikipedia.org/wiki/Kristin_Cashore"],
+  "links": [
+    {
+      "wikipedia": "https://en.wikipedia.org/wiki/Kristin_Cashore"
+    }
+  ],
   "birth_date": "10 juni 1976",
   "book_names": [
     "Graceling",

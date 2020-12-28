@@ -1,7 +1,13 @@
 {
   "name": "Kira Jane Buxton",
+  "OLID": "OL1393570A",
   "background": "Kira Jane Buxton's writing has appeared in The New York Times, NewYorker.com, McSweeney’s, The Rumpus, Huffington Post, and more. Her debut novel Hollow Kingdom was a finalist for the Audie Awards and the Washington State Book Awards, and was named a best book of 2019 by Good Housekeeping, NPR, and Book Riot. She calls the tropical utopia of Seattle home and spends her time with three cats, a dog, two crows, a charm of hummingbirds, five Steller's jays, two dark-eyed juncos, two squirrels, and a husband.",
-  "links": ["https://www.kirajanebuxton.com/about", "https://www.goodreads.com/author/show/18624771.Kira_Jane_Buxton"],
+  "links": [
+    {
+      "goodread": "https://www.goodreads.com/author/show/18624771.Kira_Jane_Buxton",
+      "url": "https://www.kirajanebuxton.com/about"
+    }
+  ],
   "birth_date": "April 02",
   "book_names": [
     "Hollow Kingdom"
