@@ -1,9 +1,12 @@
 {
   "name": "William Ford Gibson",
+  "OLID": "OL26283A",
   "background": "William Ford Gibson is an American-Canadian writer who has been called the \"noir prophet\" of the cyberpunk subgenre of science fiction. Gibson coined the term \"cyberspace\" in his short story \"Burning Chrome\" and later popularized the concept in his debut novel, Neuromancer (1984). In envisaging cyberspace, Gibson created an iconography for the information age before the ubiquity of the Internet in the 1990s. He is also credited with predicting the rise of reality television and with establishing the conceptual foundations for the rapid growth of virtual environments such as video games and the Web.",
   "links": [
-    "https://en.wikipedia.org/wiki/William_Gibson",
-    "https://williamgibsonbooks.com/"
+    {
+      "wikipedia": "https://en.wikipedia.org/wiki/William_Gibson",
+      "url": "https://williamgibsonbooks.com/"
+    }
     ],
   "birth_date": "17 March 1948",
   "book_names": [

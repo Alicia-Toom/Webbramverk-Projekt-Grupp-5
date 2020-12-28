@@ -1,7 +1,12 @@
 {
   "name": "Lee H. Whittlesey",
+  "OLID": "OL594452A",
   "background": "Lee Whittlesey’s thirty-five-year studies in the history of the Yellowstone region have made him an expert on Yellowstone’s vast literature and have resulted in numerous publications. He is the author, co-author, or editor of eight books and more than twenty-five journal articles, including: A Yellowstone Album: A Photographic Celebration of the First National Park; Death in Yellowstone; Lost in the Yellowstone (with Truman Everts); Yellowstone Place Names, and the voluminous Wonderland Nomenclature (2,123 pages). Another book in which (Dr.) Paul Schullery joins him as co-author is Myth and History in the Creation of Yellowstone National Park (University of Nebraska Press, 2004). Their book A History of Large Mammals of the Yellowstone Region, 1806-1883 is also forthcoming.\n\nWhittlesey has a master’s degree in history from Montana State University and a law degree (Juris Doctor) from the University of Oklahoma. On May 19, 2001, because of his extensive writings and long contributions to Yellowstone National Park, Idaho State University conferred upon him an Honorary Doctorate of Science and Humane Letters. Since 1996, he has been an adjunct professor of history at Montana State University.",
-  "links": ["https://www.goodreads.com/author/show/243724.Lee_H_Whittlesey"],
+  "links": [
+    {
+      "wikipedia": "https://www.goodreads.com/author/show/243724.Lee_H_Whittlesey"
+    }
+  ],
   "birth_date": "15 februari 1950",
   "book_names": [
     "Ho! For Wonderland",
