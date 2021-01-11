@@ -1,44 +1,75 @@
 {% extends "base.html" %}
-
 {% block content %}
-
-
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    {% for row in carousel.rows() %}
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ loop.index - 1 }}" class="{% if loop.first %} active {% endif %}"></li>
-    {% endfor %}
-  </ol>
-  <div class="carousel-inner">
-    {% for row in carousel.rows() %}
-    <div class="carousel-item {% if loop.first %} active {% endif %}">
-      <div class="row">
-      {% for book in row %}
-        <div class="col-12 col-md d-flex align-items-center justify-content-center">
-          <div class="carousel-item-book">
-            <img src="/books/{{ book._id }}/cover" class="carousel-item-book-cover">
-            <div class="carousel-item-book-caption">
-              <h5><a href="/books/{{ book._id }}">{{ book.title }}</a></h5>
-              <!--
-              <p>{{ book.storyline }}</p>
-              -->
+<div id="search" class="d-flex align-items-center">
+  <div id="search-nav-container" class="container justify-content-center border rounded">
+    <ul class="nav nav-pills" id="search-nav-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="search-book-tab" data-bs-toggle="tab" href="#search-book" role="tab" aria-controls="search-book" aria-selected="true">Book</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="search-author-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="search-author" aria-selected="false">Author</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="search-nav-content">
+      <div class="tab-pane fade show active" id="search-book" role="tabpanel" aria-labelledby="search-book-tab">
+        <form>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Book title or other stuff...">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        </form>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="search-author-tab">
+        <form>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Author name or other stuff...">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-    {% endfor %}
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
 </div>
-
-
+<div id="book-carousel-container" class="container justify-content-center">
+  <div id="book-carousel" class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      {% for row in carousel.rows() %}
+      <li data-bs-target="#book-carousel" data-bs-slide-to="{{ loop.index - 1 }}" class="{% if loop.first %} active {% endif %}"></li>
+      {% endfor %}
+    </ol>
+    <div class="carousel-inner">
+      {% for row in carousel.rows() %}
+      <div class="carousel-item {% if loop.first %} active {% endif %}">
+        <div class="row">
+        {% for book in row %}
+          <div class="col-12 col-md d-flex align-items-center justify-content-center">
+            <div class="carousel-item-book">
+              <img src="/books/{{ book._id }}/cover" class="carousel-item-book-cover">
+              <div class="carousel-item-book-caption">
+                <h5><a href="/books/{{ book._id }}">{{ book.title }}</a></h5>
+                <!--
+                <p>{{ book.storyline }}</p>
+                -->
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#book-carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#book-carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
 {%  endblock %}
