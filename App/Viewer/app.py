@@ -1,7 +1,6 @@
 from Controller.books_controller import books
 from Controller.commons import Carousel
 from flask import Flask, render_template
-
 from Model.MongoDB.Models.books import Book
 
 app = Flask(__name__)
