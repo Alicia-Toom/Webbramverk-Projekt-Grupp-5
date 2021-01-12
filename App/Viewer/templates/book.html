@@ -10,12 +10,9 @@
           <h1 class="">{{ book.title }}</h1>
           <div class="row">
             <div class="col-md-12">
-              <h3 class=""> {% for author in book.authors %} {{ author }} {% endfor %} <small class="text-muted"></small></h3>
+              <h3 class="">by:  {% for author in book.authors %} {{ author }} {% endfor %} <small class="text-muted"></small></h3>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <h6 class="text-right pt-5">Published date: {{ book.publication_date }}</h6>
         </div>
       </div>
     </div>
@@ -31,6 +28,7 @@
             <li>Pages: {{ book.pages }}</li>
             <li>Publisher: {{ book.publisher }}</li>
 			<li>Characters {% for character in book.characters %} {{ character }} {% endfor %}</li>
+            <li>Publication date: {{ book.publication_date }}</li>
           </ul>
         </div>
       </div>
@@ -80,29 +78,6 @@
         <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="https://static.pingendo.com/cover-bubble-light.svg">  </div>
         <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="https://static.pingendo.com/cover-moon.svg">  </div>
         <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="https://static.pingendo.com/cover-bubble-dark.svg">  </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center d-md-flex align-items-center">
-          <p class="mt-2 mb-0">© 2020-2020 ILDB. All rights reserved</p>
-          <ul class="nav mx-md-auto d-flex justify-content-center"></ul>
-          <div class="row">
-            <div class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2"> <a href="#">
-                <i class="d-block fa fa-facebook-official text-muted fa-lg mx-2"></i>
-              </a> <a href="#">
-                <i class="d-block fa fa-instagram text-muted fa-lg mx-2"></i>
-              </a> <a href="#">
-                <i class="d-block fa fa-twitter text-muted fa-lg ml-2"></i>
-              </a> </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-        </div>
       </div>
     </div>
   </div>
