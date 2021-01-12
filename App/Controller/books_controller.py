@@ -6,6 +6,12 @@ from Model.MongoDB.Models.books import Book
 books = Blueprint('books', __name__)
 
 
+@books.route('/books')
+def index():
+    books = Book.all()
+    return render_template('books/index.html', books=books)
+
+
 @books.route('/books/<book_id>')
 def book(book_id):
     book = Book.find(_id=ObjectId(book_id)).first_or_none()
