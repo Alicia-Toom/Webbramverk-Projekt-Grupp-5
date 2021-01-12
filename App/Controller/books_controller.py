@@ -1,3 +1,4 @@
+from random import shuffle
 from bson import ObjectId
 from flask import render_template, make_response, abort, Blueprint
 from Model.MongoDB.Models.books import Book
@@ -8,6 +9,13 @@ books = Blueprint('books', __name__)
 @books.route('/books/<book_id>')
 def book(book_id):
     book = Book.find(_id=ObjectId(book_id)).first_or_none()
+    # rec_books = []
+    # books = Book.find(genres=book.genres[0])
+    # for i in range(len(books)):
+    #     print()
+    #     if books[i] not in rec_books and books[i]._id != book._id:
+    #         rec_books.append(books[i])
+    # shuffle(rec_books)
     return render_template('book.html', book=book)
 
 
