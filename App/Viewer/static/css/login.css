@@ -1,0 +1,38 @@
+#content {
+    background-image: url("/static/Images/front_page/login_background4.jpg");
+    background-size: 100% auto;
+}
+
+#content .login-container {
+    height: 600px;
+    color: #FFFFFF;
+}
+
+#content .login-container .card {
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+#content .login-container .card span.input-group-text {
+    background-color: #FCA311;
+    border-color: #FCA311;
+    width: 40px;
+}
+
+#content .login-container .card .remember-me input {
+    margin-right: 10px
+}
+
+#content .login-container .card .btn-primary {
+    background-color: #FCA311;
+    border-color: #FCA311;
+    width: 100px;
+}
+
+#content .login-container a {
+    color: white;
+}
+
+#content .login-container #login-signup {
+    margin-left: 5px;
+}

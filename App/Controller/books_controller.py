@@ -22,7 +22,7 @@ def book(book_id):
     #     if books[i] not in rec_books and books[i]._id != book._id:
     #         rec_books.append(books[i])
     # shuffle(rec_books)
-    return render_template('book.html', book=book)
+    return render_template('books/book.html', book=book)
 
 
 @books.route('/books/<book_id>/cover')
