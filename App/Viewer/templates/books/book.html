@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% endblock %}
+{% block content %}
+    <div class="py-1 pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="">{{ book.title }}</h1>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="">by:  {% for author in book.authors %} {{ author }} {% endfor %} <small class="text-muted"></small></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="p-0 col-lg-5 order-2 order-lg-1"> <img class="img-fluid d-block" src="/books/{{ book._id }}/cover"> </div>
+        <div class="d-flex flex-column justify-content-center p-3 col-lg-7 order-1 order-lg-2">
+          <ul class="">
+            <li>Genres: {% for genre in book.genres %} {{ genre }}, {% endfor %}</li>
+            <li>Original Language: {{ book.language }}</li>
+            <li>Pages: {{ book.pages }}</li>
+            <li>Publisher: {{ book.publisher }}</li>
+			<li>Characters {% for character in book.characters %} {{ character }} {% endfor %}</li>
+            <li>Publication date: {{ book.publication_date }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <h1 class="mb-3">Storyline</h1>
+          <p> {{ book.storyline }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>User Reviews</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 p-4"> <i class="d-block fa fa-circle fa-3x mb-2 text-muted"></i>
+          <h4> <b>One</b> </h4>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+        </div>
+        <div class="col-md-4 col-6 p-4"> <i class="d-block fa fa-stop-circle-o fa-3x mb-2 text-muted"></i>
+          <h4> <b>Two</b> </h4>
+          <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+        </div>
+        <div class="col-md-4 col-6 p-4"> <i class="d-block fa fa-circle-o fa-3x mb-2 text-muted"></i>
+          <h4> <b>Three</b> </h4>
+          <p>I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="text-center mx-auto col-md-12">
+          <h1>Other books you might enjoy</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="https://static.pingendo.com/cover-bubble-light.svg">  </div>
+        <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="https://static.pingendo.com/cover-moon.svg">  </div>
+        <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="https://static.pingendo.com/cover-bubble-dark.svg">  </div>
+      </div>
+    </div>
+  </div>
+
+{%  endblock %}

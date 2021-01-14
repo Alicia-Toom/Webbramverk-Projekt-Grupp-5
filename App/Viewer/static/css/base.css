@@ -1,0 +1,96 @@
+body {
+    background: black;
+}
+
+header {
+    margin: 0 15%;
+    color: #FFFFFF;
+}
+
+header a,
+header a:hover {
+    color: #FFFFFF;
+}
+
+header .nav-item .nav-link.active {
+    background-color: #f4ac00;
+}
+
+main {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#content #search {
+    background-image: url("/static/Images/front_page/search_background.jpg");
+    background-size: 100% auto;
+    height: 400px;
+}
+
+#content #search #search-nav-container {
+    width: 50%;
+    background-color: #FFFFFF;
+    padding: 15px
+}
+
+#content #search #search-nav-container .nav-pills {
+    padding-bottom: 10px;
+}
+
+#content #search #search-nav-container .nav-pills .nav-link.active {
+    color: black;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid blue;
+}
+
+#content #book-carousel-container {
+    width: 70%;
+    height: 550px;
+    padding: 100px 0;
+}
+
+#content #book-carousel-container .carousel-indicators {
+    margin-bottom: -50px;
+}
+
+#content #book-carousel-container .carousel-item .row {
+    padding: 0 100px;
+}
+
+#content #book-carousel .carousel-item-book {
+    text-align: center;
+}
+
+#content #book-carousel .carousel-item-book a {
+    color: #FFFFFF;
+}
+
+
+#content #book-carousel .carousel-item-book img {
+    width: 200px;
+}
+
+footer {
+    margin: 0 15%;
+    color: #FFFFFF;
+}
+
+footer a,
+footer a:hover {
+    color: #FFFFFF;
+}
+
+footer .logo {
+    text-align: center;
+}
+
+footer .social-media a {
+    font-size: 24px;
+    padding: 0 5px;
+}
+
+.container-fluid {
+    color: #FFFFFF;
+    text-decoration: none;
+}

@@ -5,6 +5,10 @@ import json
 import os
 import urllib.request
 from bson.binary import Binary
+import shutil
+
+
+NOT_FOUND = "Viewer/static/images/noimage.jpg"
 
 
 def import_jsons_as_books(path):
@@ -23,6 +27,7 @@ def import_jsons_as_books(path):
                 new_book = Book(json_data)
                 new_book.save()
 
+
 def download_book_covers(path):
     files = os.listdir(path) #os package
     for file in files:
@@ -36,7 +41,10 @@ def download_book_covers(path):
                     urllib.request.urlretrieve(cover_url, cover_file)
                     print(f"Successfully downloaded cover for url: {cover_url} to file: {cover_file}")
                 except HTTPError:
+                    copy_file = os.path.join(path, file.replace(".json", ".jpg"))
+                    shutil.copy(NOT_FOUND, copy_file)
                     print(f"Unable to download cover from url: {cover_url} to file: {cover_file}")
+
 
 
 def import_jsons_as_authors(path):
@@ -70,3 +78,5 @@ def download_author_photo(path):
                     print(f"Successfully downloaded cover for url: {cover_url} to file: {cover_file}")
                 except HTTPError:
                     print(f"Unable to download cover from url: {cover_url} to file: {cover_file}")
+                    copy_file = os.path.join(path, file.replace(".json", ".jpg"))
+                    shutil.copy(NOT_FOUND, copy_file)
