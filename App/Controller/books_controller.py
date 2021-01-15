@@ -1,6 +1,8 @@
 from random import shuffle
 from bson import ObjectId
 from flask import render_template, make_response, abort, Blueprint
+
+from Controller.commons import Carousel, DataIndex
 from Model.MongoDB.Models.books import Book
 
 books = Blueprint('books', __name__)
@@ -8,8 +10,7 @@ books = Blueprint('books', __name__)
 
 @books.route('/books')
 def index():
-    books = Book.all()
-    return render_template('books/index.html', books=books)
+    return render_template('books/index.html', books_index=DataIndex(Book.all(), bucket_key_attribute='title'))
 
 
 @books.route('/books/<book_id>')
