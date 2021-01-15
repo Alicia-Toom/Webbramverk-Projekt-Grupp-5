@@ -131,3 +131,4 @@ dmypy.json
 # PyCharm
 .idea
 /App/Model/MongoDB/DB/db_settings/__init__.py
+/App/Model/MySQL/DB/db_settings/
