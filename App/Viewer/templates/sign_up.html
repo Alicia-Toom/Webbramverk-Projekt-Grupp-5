@@ -10,7 +10,7 @@
           <h3>Sign Up</h3>
         </div>
         <div class="card-body">
-          <form action="signups" method="POST">
+          <form action="signups" onsubmit="return validate()" method="POST" name="signups">
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa fa-user"></i></span>
               <input type="text" class="form-control" placeholder="Username" name="username">
@@ -25,9 +25,9 @@
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa fa-key"></i></span>
-              <input type="password" class="form-control" placeholder="Confirm Password">
+              <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password">
             </div>
-            <div class="d-flex justify-content-center mb-3" id="error-message">
+            <div class="d-flex justify-content-center mb-3" id="error_message">
 
             </div>
             <div class="form-group d-flex justify-content-center submit">
@@ -38,4 +38,31 @@
       </div>
     </div>
 {%  endblock %}
+{% block scripts %}
+      <script>
+        function validate() {
+            let username = document.signups.username;
+            let password = document.signups.password;
+            let confirm_password = document.signups.confirm_password;
+            let error_message = document.getElementById("error_message");
+            error_message.innerHTML = "";
+
+            if(username.value.length < 4) {
+                error_message.innerHTML = "Username must be at least 4 characters long.";
+                return false;
+            }
+
+            if(password.value.length < 6) {
+                error_message.innerHTML = "Password must be at least 6 characters long.";
+                return false;
+            }
+
+            if(password.value !== confirm_password.value) {
+                error_message.innerHTML = "Passwords does not match."
+                return false;
+            }
+            return true;
+        }
+    </script>
+{% endblock %}
 
