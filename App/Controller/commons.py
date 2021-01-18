@@ -7,11 +7,6 @@ class Carousel:
     def rows(self):
         rows = [self.items[i:i + self.items_per_row] for i in range(0, len(self.items), self.items_per_row)]
         return rows[0:self.max_rows]
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> e8a562e369fbf54ef59f9a94445b7fd6047f49d5
 
 
 class DataIndex:
@@ -25,17 +20,10 @@ class DataIndex:
                 self.buckets[key] = []
             self.buckets[key].append(item)
 
-<<<<<<< HEAD
-
     def indices(self):
         return sorted(self.buckets.keys())
 
-
-=======
-    def indices(self):
-        return sorted(self.buckets.keys())
-
->>>>>>> e8a562e369fbf54ef59f9a94445b7fd6047f49d5
+      
     def entries(self, key):
         if key not in self.buckets.keys():
             return []
@@ -43,7 +31,3 @@ class DataIndex:
             result = self.buckets[key]
             result.sort(key=lambda entry: entry[self.bucket_key_attribute])
             return result
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> e8a562e369fbf54ef59f9a94445b7fd6047f49d5
