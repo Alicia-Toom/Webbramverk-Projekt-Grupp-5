@@ -16,13 +16,13 @@ def index():
 @books.route('/books/<book_id>')
 def book(book_id):
     book = Book.find(_id=ObjectId(book_id)).first_or_none()
-    # rec_books = []
-    # books = Book.find(genres=book.genres[0])
-    # for i in range(len(books)):
-    #     print()
-    #     if books[i] not in rec_books and books[i]._id != book._id:
-    #         rec_books.append(books[i])
-    # shuffle(rec_books)
+    rec_books = []
+    books = Book.find(genres=book.genres[0])
+    for _ in books:
+        if _['_id'] not in rec_books and _['_id'] != book['_id']:
+            rec_books.append(_)
+    shuffle(rec_books)
+
     return render_template('books/book.html', book=book)
 
 
