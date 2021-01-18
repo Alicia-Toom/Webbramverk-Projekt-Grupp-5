@@ -1,12 +1,40 @@
 {% extends "base.html" %}
+{% block head %}
+<title>Authors</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/authors.css')}}">
+{%  endblock %}
 
 {% block content %}
-     test test
-  <ul>
-      {% for author in authors %}
-      <li>
-          {{ author.name }}
-      </li>
+<div id="author-index-container" class="d-flex justify-content-center">
+  <div id="author-index-container-inner">
+    <div class="indices d-flex justify-content-center">
+      <ul class="nav border rounded">
+      {% for index in authors_index.indices() %}
+        <li class="nav-item">
+          <a href="#entries-{{ index }}" class="nav-link">{{ index }}</a>
+        </li>
       {% endfor %}
-  </ul>
+      </ul>
+    </div>
+    {% for index in authors_index.indices() %}
+    <div class="entries">
+      <a name="entries-{{ index }}"><h2>{{ index }}</h2></a>
+        {% for entry in authors_index.entries(index) %}
+        <div class="d-flex author-entry">
+          <div class="photo justify-content-start">
+            <img src="/authors/{{ entry._id }}/photo"/>
+          </div>
+          <div class="info justify-content-end">
+            <p><a href="/authors/{{ entry._id }}">{{ entry.name }}</a></p>
+            <p><span class="bold">Genres:</span> {{ entry.genres | join(', ') }} </p>
+            <p><span class="bold">Birth Date:</span> {{ entry.birth_date }} </p>
+            <p><span class="bold">Books:</span> {{ entry.book_names | join(', ')}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 {%  endblock %}

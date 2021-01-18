@@ -18,7 +18,11 @@ header .nav-item .nav-link.active {
 
 main {
     background: rgb(255,255,255);
+    /*
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    */
+    background: linear-gradient(top, #b3b3b0 0%, #e3e2dd 500px);
+    background: -webkit-linear-gradient(top, #b3b3b0 0%, #e3e2dd 500px);
 }
 
 #content #search {
@@ -41,17 +45,17 @@ main {
     color: black;
     background: none;
     border-radius: 0;
-    border-bottom: 1px solid blue;
 }
 
 #content #book-carousel-container {
-    width: 70%;
+    width: 80%;
     height: 550px;
-    padding: 100px 0;
+    padding: 150px 0;
 }
 
 #content #book-carousel-container .carousel-indicators {
-    margin-bottom: -50px;
+    margin-bottom: -20px;
+    color: #000000;
 }
 
 #content #book-carousel-container .carousel-item .row {
@@ -62,13 +66,20 @@ main {
     text-align: center;
 }
 
-#content #book-carousel .carousel-item-book a {
-    color: #FFFFFF;
+#content #book-carousel .carousel-item-book {
+    text-align: center;
 }
 
+#content #book-carousel .carousel-item-book a {
+    color: #000000;
+}
 
 #content #book-carousel .carousel-item-book img {
     width: 200px;
+}
+
+#content #book-carousel .carousel-control-prev .carousel-control-prev-icon {
+    color: black;
 }
 
 footer {
@@ -91,6 +102,6 @@ footer .social-media a {
 }
 
 .container-fluid {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
 }

@@ -1,6 +1,8 @@
 from random import shuffle
 from bson import ObjectId
 from flask import render_template, make_response, abort, Blueprint
+
+from Controller.commons import Carousel, DataIndex
 from Model.MongoDB.Models.books import Book
 
 books = Blueprint('books', __name__)
@@ -8,8 +10,7 @@ books = Blueprint('books', __name__)
 
 @books.route('/books')
 def index():
-    books = Book.all()
-    return render_template('books/index.html', books=books)
+    return render_template('books/index.html', books_index=DataIndex(Book.all(), bucket_key_attribute='title'))
 
 
 @books.route('/books/<book_id>')
@@ -27,13 +28,11 @@ def book(book_id):
 
 @books.route('/books/<book_id>/cover')
 def cover(book_id):
-    # Example on how to use in HTML: <img src="/books/{{ book._id }}/cover" />
     book = Book.find(_id=ObjectId(book_id)).first_or_none()
     if book is not None and book.cover_image is not None:
         cover_image = book.cover_image
         response = make_response(cover_image)
         response.headers.set('Content-Type', 'image/jpeg')
         return response
-    else: #remove the american gods
-        # TODO Return default cover
-        abort(404) #http respornse code 404=notfound
+    else:
+        abort(404)
