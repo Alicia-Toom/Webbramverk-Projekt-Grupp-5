@@ -2,10 +2,15 @@ from random import shuffle
 from bson import ObjectId
 from flask import render_template, make_response, abort, Blueprint
 
-from Controller.commons import Carousel, DataIndex
+from Controller.Utils.commons import DataIndex
 from Model.MongoDB.Models.books import Book
 
 books = Blueprint('books', __name__)
+
+
+@books.context_processor
+def inject_books_context():
+    return dict(tab="books")
 
 
 @books.route('/books')

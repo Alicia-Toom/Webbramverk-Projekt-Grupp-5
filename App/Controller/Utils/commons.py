@@ -1,3 +1,8 @@
+from functools import wraps
+
+from flask import session, redirect, url_for
+
+
 class Carousel:
     def __init__(self, items, max_rows=5, items_per_row=4):
         self.items = items
@@ -23,7 +28,6 @@ class DataIndex:
     def indices(self):
         return sorted(self.buckets.keys())
 
-      
     def entries(self, key):
         if key not in self.buckets.keys():
             return []
@@ -31,3 +35,20 @@ class DataIndex:
             result = self.buckets[key]
             result.sort(key=lambda entry: entry[self.bucket_key_attribute])
             return result
+
+
+def authenticated(fail_route='index'):
+    def decorator(route):
+        @wraps(route)
+        def wrapper(*args, **kwargs):
+            if is_authenticated():
+                return route(*args, **kwargs)
+            return redirect(url_for(fail_route))
+
+        return wrapper
+
+    return decorator
+
+
+def is_authenticated():
+    return 'username' in session
