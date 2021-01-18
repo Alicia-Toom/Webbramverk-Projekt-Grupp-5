@@ -17,7 +17,7 @@ def signup_post():
     password = request.form['password']
     salt = bcrypt.gensalt()
     hashed_password = bcrypt.hashpw(str.encode(password), salt)
-    user = User(username=username, email=email, password=hashed_password)
+    user = User(username=username, email=email, password=hashed_password, first_name="oscar", last_name="widing")
     print()
 
     users_repo.add_user(user)
