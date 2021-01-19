@@ -43,11 +43,14 @@ def signup():
 @login.route('/login/signup', methods=['POST'])
 def signup_post():
     username = request.form['username']
-    email = request.form['email']
-    password = request.form['password']
-    salt = bcrypt.gensalt()
-    hashed_password = bcrypt.hashpw(str.encode(password), salt)
-    user = User(username=username, email=email, password=hashed_password)
+    if User.query.filter_by(username=username).first():
+        return render_template('login/signup.html', taken=True)
+    else:
+        email = request.form['email']
+        password = request.form['password']
+        salt = bcrypt.gensalt()
+        hashed_password = bcrypt.hashpw(str.encode(password), salt)
+        user = User(username=username, email=email, password=hashed_password)
 
-    add_user(user)
-    return redirect(url_for('login.index'))
+        add_user(user)
+        return redirect(url_for('login.index'))

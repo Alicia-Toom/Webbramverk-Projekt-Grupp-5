@@ -1,5 +1,7 @@
 import os
 
+from flask_sqlalchemy import SQLAlchemy
+
 from Controller.Utils.import_to_sqlalchemy import create_users
 from Controller.authors_controller import authors
 from Controller.books_controller import books
@@ -18,6 +20,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(basedir + "/
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = SECRET_KEY
 
+db = SQLAlchemy()
 db.init_app(app)
 
 app.register_blueprint(books)
