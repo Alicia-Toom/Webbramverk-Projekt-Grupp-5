@@ -14,7 +14,7 @@ def index():
 @authors.route('/authors/<author_id>')
 def author(author_id):
     author = Author.find(_id=ObjectId(author_id)).first_or_none()
-    return render_template('authors/author.html', author=author)
+    return render_template('authors/author.html', author=author, carousel=Carousel(Author.all()), items_per_row=3)
 
 
 @authors.route('/authors/<author_id>/photo')
