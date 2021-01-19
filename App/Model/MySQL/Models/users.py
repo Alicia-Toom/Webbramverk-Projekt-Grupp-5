@@ -1,4 +1,4 @@
-from App.Viewer.app import db
+from Model.MySQL.DB import db
 
 
 class User(db.Model):

@@ -15,20 +15,29 @@
             <a class="navbar-brand" href="/"><img src="/static/Images/ILDB_logo.png" /></a>
             <ul class="nav nav-pills container justify-content-end">
               <li class="nav-item">
-                <a class="nav-link active" href="/">Home</a>
+                <a class="nav-link {% if tab == 'app' %} active {% endif %}" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/books">Books</a>
+                <a class="nav-link {% if tab == 'books' %} active {% endif %}" href="/books">Books</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/authors">Authors</a>
+                <a class="nav-link {% if tab == 'authors' %} active {% endif %}" href="/authors">Authors {{ kuk }}</a>
+              </li>
+              {% if authenticated %}
+               <li class="nav-item">
+                <a class="nav-link {% if tab == 'profile' %} active {% endif %}" href="/profile">Profile</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link {% if tab == 'login' %} active {% endif %}" href="/logout">Log Out</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a class="nav-link {% if tab == 'signup' %} active {% endif %}" href="/login/signup">Sign Up</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/signups">Sign Up</a>
+                <a class="nav-link {% if tab == 'login' %} active {% endif %}" href="/login">Log In</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/logins">Log In</a>
-              </li>
+              {% endif %}
             </ul>
         </div>
     </header>
