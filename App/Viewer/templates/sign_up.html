@@ -28,6 +28,7 @@
               <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password">
             </div>
             <div class="d-flex justify-content-center mb-3" id="error_message">
+                {% if taken==True %} Username is already taken. Try a diffrent variant or adding a number. {% endif %}
 
             </div>
             <div class="form-group d-flex justify-content-center submit">
