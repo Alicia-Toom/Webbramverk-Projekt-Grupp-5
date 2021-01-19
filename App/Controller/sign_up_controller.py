@@ -21,4 +21,4 @@ def signup_post():
     print()
 
     users_repo.add_user(user)
-    return redirect(url_for('log_in'))
+    return redirect(url_for('log_in.html'))
