@@ -1,5 +1,5 @@
-from Controller.import_to_db_from_json import import_jsons_as_books, \
-    download_book_covers, download_author_photo, import_jsons_as_authors
+from Controller.Utils.import_to_mongodb import import_jsons_as_books, \
+    import_jsons_as_authors
 
 
 def main():
