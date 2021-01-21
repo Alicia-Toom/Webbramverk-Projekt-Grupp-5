@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 {% block head %}
 <title>Books</title>
@@ -5,38 +6,60 @@
 {%  endblock %}
 
 {% block content %}
+
+<nav id="nav-container" class="navbar sticky-top justify-content-center">
+    <div id="nav-index-container-inner">
+      <div class="indices d-flex justify-content-center">
+        <ul id="nav-boarder" class="nav border rounded">
+        {% for index in books_index.indices() %}
+          <li class="nav-item">
+            <a href="#entries-{{ index }}" class="nav-link">{{ index }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+</nav>
+
 <div id="book-index-container" class="d-flex justify-content-center">
   <div id="book-index-container-inner">
-    <div class="indices d-flex justify-content-center">
-      <ul class="nav border rounded">
-      {% for index in books_index.indices() %}
-        <li class="nav-item">
-          <a href="#entries-{{ index }}" class="nav-link">{{ index }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    </div>
     {% for index in books_index.indices() %}
     <div class="entries">
       <a name="entries-{{ index }}"><h2>{{ index }}</h2></a>
-        {% for entry in books_index.entries(index) %}
-        <div class="d-flex book-entry">
-          <div class="cover justify-content-start">
-            <img src="/books/{{ entry._id }}/cover"/>
-          </div>
-          <div class="info justify-content-end">
-            <p><a href="/books/{{ entry._id }}">{{ entry.title }}</a></p>
-            <p><span class="bold">Authors:</span> {{ entry.authors | join(',') }} </p>
-            <p><span class="bold">Genres:</span> {{ entry.genres | join(' , ') }} </p>
-            <p><span class="bold"> Publisher:</span> {{ entry.publisher }}</p>
-            <p><span class="bold"> Publication Date:</span> {{ entry.publication_date }}</p>
-            <p><span class="bold"> Pages:</span> {{ entry.pages }}</p>
-          </div>
+      {% for entry in books_index.entries(index) %}
+      <div class="d-flex book-entry">
+        <div class="cover justify-content-start">
+          <img src="/books/{{ entry._id }}/cover"/>
         </div>
-        {% endfor %}
-      </ul>
+        <div class="info justify-content-end">
+          <p><a href="/books/{{ entry._id }}">{{ entry.title }}</a></p>
+          <p><span class="bold">Authors:</span> {{ entry.authors | join(',') }} </p>
+          <p><span class="bold">Genres:</span> {{ entry.genres | join(' , ') }} </p>
+          <p><span class="bold"> Publisher:</span> {{ entry.publisher }}</p>
+          <p><span class="bold"> Publication Date:</span> {{ entry.publication_date }}</p>
+          <p><span class="bold"> Pages:</span> {{ entry.pages }}</p>
+        </div>
+      </div>
+      {% endfor %}
     </div>
     {% endfor %}
   </div>
 </div>
 {%  endblock %}
+{% block scripts %}
+<!--      <script>-->
+<!--         if ($(window).width() > 992) {-->
+<!--            $(window).scroll(function(){-->
+<!--               if ($(this).scrollTop() > 40) {-->
+<!--                  $('#book-index-container').addClass("fixed-top");-->
+<!--                  // add padding top to show content behind navbar-->
+<!--                  $('body').css('padding-top', $('.navbar').outerHeight() + 'px');-->
+<!--               }else{-->
+<!--                  $('#book-index-container').removeClass("fixed-top");-->
+<!--                   // remove padding top from body-->
+<!--                  $('body').css('padding-top', '0');-->
+<!--                }-->
+<!--            });-->
+<!--          }-->
+<!--      </script>-->
+{% endblock %}
