@@ -60,7 +60,6 @@ body {
     line-height: 1.5;
     color: #FFF;
     text-align: left;
-    background-color: #000;
 }
 
 [tabindex="-1"]:focus {
@@ -10401,39 +10400,5 @@ a.text-dark:hover, a.text-dark:focus {
     .table .thead-dark th {
         color: inherit;
         border-color: #dee2e6;
-    }
-    #content #book-carousel-container {
-    width: 80%;
-    height: 550px;
-    padding: 150px 0;
-    }
-
-    #content #book-carousel-container .carousel-indicators {
-        margin-bottom: -20px;
-        color: #000000;
-    }
-
-    #content #book-carousel-container .carousel-item .row {
-        padding: 0 100px;
-    }
-
-    #content #book-carousel .carousel-item-book {
-        text-align: center;
-    }
-
-    #content #book-carousel .carousel-item-book {
-        text-align: center;
-    }
-
-    #content #book-carousel .carousel-item-book a {
-        color: #000000;
-    }
-
-    #content #book-carousel .carousel-item-book img {
-        width: 200px;
-    }
-
-    #content #book-carousel .carousel-control-prev .carousel-control-prev-icon {
-        color: black;
     }
 }
