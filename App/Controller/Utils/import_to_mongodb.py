@@ -7,7 +7,6 @@ import urllib.request
 from bson.binary import Binary
 import shutil
 
-
 NOT_FOUND = "Viewer/static/images/noimage.jpg"
 
 
@@ -20,8 +19,8 @@ def import_jsons_as_books(path):
 
                 cover_file = os.path.join(path, file.replace(".json", ".jpg"))
                 if os.path.exists(cover_file):
-                    with open(cover_file, "rb") as c: #read binary
-                        cover_image = Binary(c.read()) #read the data from the file
+                    with open(cover_file, "rb") as c:  # read binary
+                        cover_image = Binary(c.read())  # read the data from the file
                         json_data['cover_image'] = cover_image
 
                 new_book = Book(json_data)
@@ -29,7 +28,7 @@ def import_jsons_as_books(path):
 
 
 def download_book_covers(path):
-    files = os.listdir(path) #os package
+    files = os.listdir(path)  # os package
     for file in files:
         if file.endswith(".json"):
             with open(os.path.join(path, file), encoding='utf-8') as f:
@@ -44,7 +43,6 @@ def download_book_covers(path):
                     copy_file = os.path.join(path, file.replace(".json", ".jpg"))
                     shutil.copy(NOT_FOUND, copy_file)
                     print(f"Unable to download cover from url: {cover_url} to file: {cover_file}")
-
 
 
 def import_jsons_as_authors(path):
@@ -65,7 +63,7 @@ def import_jsons_as_authors(path):
 
 
 def download_author_photo(path):
-    files = os.listdir(path) #os package
+    files = os.listdir(path)  # os package
     for file in files:
         if file.endswith(".json"):
             with open(os.path.join(path, file), encoding='utf-8') as f:

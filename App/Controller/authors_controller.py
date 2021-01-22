@@ -2,9 +2,14 @@ from bson import ObjectId
 from flask import render_template, Blueprint, make_response, abort
 from Model.MongoDB.Models.authors import Author
 from Model.MongoDB.Models.books import Book
-from Controller.commons import Carousel, DataIndex
+from Controller.Utils.commons import DataIndex, Carousel
 
 authors = Blueprint('authors', __name__)
+
+
+@authors.context_processor
+def inject_authors_context():
+    return dict(tab="authors")
 
 
 @authors.route('/authors')
