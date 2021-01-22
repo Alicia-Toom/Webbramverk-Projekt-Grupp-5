@@ -5,19 +5,31 @@
 #book-index-container #book-index-container-inner {
     width: 65%;
     background-color: #FFFFFF;
+    padding-top: 30px;
 }
 
 #book-index-container .indices {
     padding: 50px 0;
 }
 
-#book-index-container .indices ul {
+#nav-container .indices {
+    background-color: #FCA311;
+    padding: 0px 0;
+}
+
+#nav-container .indices .border {
+    border-color: #FCA311;
+}
+
+#nav-container .indices a {
+    color: #000000;
+    font-weight: bold;
     background-color: #f4ac00;
 }
 
-#book-index-container .indices a {
-    color: #000000;
-    font-weight: bold;
+#nav-container .indices ul{
+    color: #FCA311;
+    width: 100%;
 }
 
 #book-index-container .entries {

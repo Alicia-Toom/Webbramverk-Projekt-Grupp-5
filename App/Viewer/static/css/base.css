@@ -1,7 +1,6 @@
 body {
     background: black;
 }
-
 header {
     margin: 0 15%;
     color: #FFFFFF;
@@ -94,6 +93,11 @@ footer a:hover {
 
 footer .logo {
     text-align: center;
+}
+
+footer p
+{
+    color: #FFFFFF;
 }
 
 footer .social-media a {
