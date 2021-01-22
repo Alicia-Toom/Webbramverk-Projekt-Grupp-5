@@ -1,62 +1,63 @@
-#book-index-container {
-    width: 100%;
+.img-fluid {
+  max-width: 70%;
+    height: auto;
+    padding-top: 10%;
+    margin-left: 15%;
+    padding-bottom: 15%;
 }
 
-#book-index-container #book-index-container-inner {
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1.2rem;
+    font-weight: 450;
+    line-height: 2;
+    color: #000000;
+}
+
+.py-1 .container {
+    padding-top: ;
+}
+
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+    padding-left: 5%;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style-type: none;
+}
+
+#book-container-inner{
     width: 65%;
     background-color: #FFFFFF;
     padding-top: 30px;
 }
 
-#book-index-container .indices {
-    padding: 50px 0;
+ol, ul {
+    padding-left: 1.34rem;
 }
 
-#nav-container .indices {
-    background-color: #FCA311;
-    padding: 0px 0;
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    /* margin-right: calc(var(--bs-gutter-x)/ -2); */
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    min-width: auto;
 }
 
-#nav-container .indices .border {
-    border-color: #FCA311;
-}
-
-#nav-container .indices a {
-    color: #000000;
-    font-weight: bold;
-    background-color: #f4ac00;
-}
-
-#nav-container .indices ul{
-    color: #FCA311;
+.col-md-6 {
+    flex: 0 0 auto;
     width: 100%;
-}
-
-#book-index-container .entries {
-    width: 800px;
-    padding-left: 100px;
-}
-
-#book-index-container .entries a {
-    color: #14213d;
-    font-weight: bolder;
-    font-size: x-large;
-}
-
-
-#book-index-container .book-entry {
-    margin-bottom: 60px;
-}
-
-#book-index-container .book-entry .cover img {
-    width: 150px;
-    height: 250px;
-}
-
-#book-index-container .book-entry .info {
-    padding-left: 50px;
-}
-
-#book-index-container .book-entry .bold {
-    font-weight: bold;
 }
