@@ -5,6 +5,24 @@
 #author-index-container #author-index-container-inner {
     width: 65%;
     background-color: #FFFFFF;
+    padding-top: 30px;
+}
+
+#author-index-container .indices {
+    padding: 50px 0;
+}
+
+#author-index-container .indices ul {
+    background-color: #f4ac00;
+}
+
+#author-index-container .indices a {
+    color: #000000;
+    font-weight: bold;
+}
+
+#nav-container #nav-index-container-inner {
+    background-color: #FFFFFF;
 }
 
 #author-index-container .indices {
@@ -46,4 +64,24 @@
 
 #author-index-container .author-entry .bold {
     font-weight: bold;
+}
+
+#nav-container .indices {
+    background-color: #FCA311;
+    padding: 0px 0;
+}
+
+#nav-container .indices .border {
+    border-color: #FCA311;
+}
+
+#nav-container .indices a {
+    color: #000000;
+    font-weight: bold;
+    background-color: #f4ac00;
+}
+
+#nav-container .indices ul{
+    color: #FCA311;
+    width: 100%;
 }
