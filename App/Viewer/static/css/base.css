@@ -75,6 +75,13 @@ main {
 
 #content #book-carousel .carousel-item-book img {
     width: 200px;
+    height: 300px;
+
+}
+
+#content #book-carousel .carousel-item-book-caption{
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 #content #book-carousel .carousel-control-prev .carousel-control-prev-icon {
