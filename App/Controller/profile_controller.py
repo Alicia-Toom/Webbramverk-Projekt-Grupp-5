@@ -1,4 +1,4 @@
-from flask import Blueprint, session, render_template
+from flask import Blueprint, session, render_template, request
 
 from Controller.Utils.commons import authenticated
 from Model.MySQL.Repository.users_repo import find_by_username
@@ -15,4 +15,16 @@ def inject_profile_context():
 @authenticated()
 def index():
     user = find_by_username(session['username'])
+    return render_template('profile/index.html', user=user)
+
+
+@profile.route('/profile', methods=['POST'])
+@authenticated()
+def index_post():
+    user = find_by_username(session['username'])
+    first_name = request.form['first_name']
+    last_name = request.form['last_name']
+    city = request.form['city']
+    country = request.form['country']
+    print()
     return render_template('profile/index.html', user=user)

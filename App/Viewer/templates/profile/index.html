@@ -52,12 +52,9 @@
                                         <div class="card-body">
                                             <div class="row mb-2">
                                                 <div class="col">
-                                                    <p class="m-0">Peformance</p>
-                                                    <p class="m-0"><strong>65.2%</strong></p>
                                                 </div>
                                                 <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
                                             </div>
-                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
                                         </div>
                                     </div>
                                 </div>
@@ -66,12 +63,9 @@
                                         <div class="card-body">
                                             <div class="row mb-2">
                                                 <div class="col">
-                                                    <p class="m-0">Peformance</p>
-                                                    <p class="m-0"><strong>65.2%</strong></p>
                                                 </div>
                                                 <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
                                             </div>
-                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +77,7 @@
                                             <p class="text-primary m-0 font-weight-bold">User Settings</p>
                                         </div>
                                         <div class="card-body">
-                                            <form>
+                                            <form action="/profile" onsubmit="return validate()" method="POST" name="profile">
                                                 <div class="form-row">
                                                     <div class="col">
                                                         <div> <span class="bold">Username:</span> {{ user.username }} <br /> </div>
@@ -95,31 +89,31 @@
                                                 <div class="form-row">
                                                     <div class="col">
                                                         <div class="form-group"><label for="first_name"><strong>First Name</strong></label><input class="form-control" type="text" placeholder="{% if user.first_name is not none %}{{ user.first_name }} {% else %} Enter your First name {% endif %}" name="first_name"></div>
+                                                        <div class="d-flex justify-content-center mb-3" id="first_name_error_message"> </div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="form-group"><label for="last_name"><strong>Last Name</strong></label><input class="form-control" type="text" placeholder="{% if user.last_name is not none %}{{ user.last_name }} {% else %} Enter your Last name {% endif %}" name="last_name"></div>
+                                                        <div class="d-flex justify-content-center mb-3" id="last_name_error_message"> </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save Settings</button></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="card shadow">
-                                        <div class="card-header py-3">
-                                            <p class="text-primary m-0 font-weight-bold">Contact Settings</p>
-                                        </div>
-                                        <div class="card-body">
-                                            <form>
-                                                <div class="form-row">
-                                                    <div class="col">
-                                                        <div class="form-group"><label for="city"><strong>City</strong></label><input class="form-control" type="text" placeholder="Enter your City here" name="city"></div>
+                                            <div class="card-header py-3">
+                                                <p class="text-primary m-0 font-weight-bold">Contact Settings</p>
+                                            </div>
+                                            <div class="card-body">
+                                                    <div class="form-row">
+                                                        <div class="col">
+                                                            <div class="form-group"><label for="city"><strong>City</strong></label><input class="form-control" type="text" placeholder="Enter your City here" name="city"></div>
+                                                            <div class="d-flex justify-content-center mb-3" id="city_error_message"> </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group"><label for="country"><strong>Country</strong></label><input class="form-control" type="text" placeholder="Enter your Country here" name="country"></div>
+                                                            <div class="d-flex justify-content-center mb-3" id="country_error_message"> </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <div class="form-group"><label for="country"><strong>Country</strong></label><input class="form-control" type="text" placeholder="Enter your Country here" name="country"></div>
-                                                    </div>
+                                                    <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
                                                 </div>
-                                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
                                             </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -131,3 +125,63 @@
         </div>
     </div>
 {%  endblock %}
+{% block scripts %}
+      <script>
+        function validate() {
+            const regex = /[A-Za-z\s\-]/gm;
+            let first_name = document.profile.first_name;
+            let last_name = document.profile.last_name;
+            let city = document.profile.city;
+            let country = document.profile.country;
+            let first_name_error_message = document.getElementById("first_name_error_message");
+            let last_name_error_message = document.getElementById("last_name_error_message");
+            let city_error_message = document.getElementById("city_error_message");
+            let country_error_message = document.getElementById("country_error_message");
+            first_name_error_message.innerHTML = "";
+            last_name_error_message.innerHTML = "";
+            city_error_message.innerHTML = "";
+            country_error_message.innerHTML = "";
+
+            if(first_name.value.length < 3) {
+                first_name_error_message.innerHTML = "First name must be at least 3 characters long.";
+                return false;
+            }
+
+            if(!regex.test(first_name.value)){
+                first_name_error_message.innerHTML = "Name may only contain A-Z, a-z, blankspace and _";
+                return false;
+            }
+
+            if(last_name.value.length < 3) {
+                last_name_error_message.innerHTML = "Last name must be at least 3 characters long.";
+                return false;
+            }
+
+            if(!regex.test(last_name.value)){
+                last_name_error_message.innerHTML = "Name may only contain A-Z, a-z, blankspace and _";
+                return false;
+            }
+
+            if(city.value.length < 3) {
+                city_error_message.innerHTML = "City's name must be at least 3 characters long."
+                return false;
+            }
+
+            if(!regex.test(city.value)){
+                city_error_message.innerHTML = "City name may only contain A-Z, a-z, blankspace and _";
+                return false;
+            }
+
+            if(country.value.length < 3) {
+                country_error_message.innerHTML = "Country's name must be at least 3 characters long."
+                return false;
+            }
+
+            if(!regex.test(country.value)){
+                country_error_message.innerHTML = "Name may only contain A-Z, a-z, blankspace and _";
+                return false;
+            }
+            return true;
+        }
+    </script>
+{% endblock %}
