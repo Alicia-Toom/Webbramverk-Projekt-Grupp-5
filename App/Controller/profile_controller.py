@@ -1,7 +1,7 @@
 from flask import Blueprint, session, render_template, request
 
 from Controller.Utils.commons import authenticated
-from Model.MySQL.Repository.users_repo import find_by_username
+from Model.MySQL.Repository.users_repo import find_by_username, update_user
 
 profile = Blueprint('profile', __name__)
 
@@ -27,4 +27,13 @@ def index_post():
     city = request.form['city']
     country = request.form['country']
     print()
-    return render_template('profile/index.html', user=user)
+    new_values = []
+    if first_name:
+        new_values.append(first_name)
+    if last_name:
+        new_values.append(last_name)
+    if city:
+        new_values.append(city)
+    if country:
+        new_values.append(country)
+    return render_template('profile/index.html', user=user, sucess=update_user(user, new_values))
