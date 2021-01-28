@@ -142,44 +142,49 @@
             city_error_message.innerHTML = "";
             country_error_message.innerHTML = "";
 
-            if(first_name.value.length < 3) {
-                first_name_error_message.innerHTML = "First name must be at least 3 characters long.";
+            if(first_name.value.length !== 0){
+                if(first_name.value.length < 3) {
+                    first_name_error_message.innerHTML = "Must be at least 3 characters long.";
+                    return false;
+                }
+                if(!regex.test(first_name.value)){
+                first_name_error_message.innerHTML = "May only contain A-Z, a-z, blank space and _";
                 return false;
+                }
             }
 
-            if(!regex.test(first_name.value)){
-                first_name_error_message.innerHTML = "Name may only contain A-Z, a-z, blankspace and _";
+
+            if(last_name.value.length !== 0){
+                if(last_name.value.length < 3) {
+                    last_name_error_message.innerHTML = "Must be at least 3 characters long.";
+                    return false;
+                }
+                if(!regex.test(last_name.value)){
+                last_name_error_message.innerHTML = "May only contain A-Z, a-z, blank space and _";
                 return false;
+                }
             }
 
-            if(last_name.value.length < 3) {
-                last_name_error_message.innerHTML = "Last name must be at least 3 characters long.";
-                return false;
+            if(city.value.length !== 0) {
+                if (city.value.length < 3) {
+                    city_error_message.innerHTML = "Must be at least 3 characters long."
+                    return false;
+                }
+                if (!regex.test(city.value)) {
+                    city_error_message.innerHTML = "May only contain A-Z, a-z, blankspace and _";
+                    return false;
+                }
             }
+            if(country.value.length !== 0) {
+                if (country.value.length < 3) {
+                    country_error_message.innerHTML = "Must be at least 3 characters long."
+                    return false;
+                }
 
-            if(!regex.test(last_name.value)){
-                last_name_error_message.innerHTML = "Name may only contain A-Z, a-z, blankspace and _";
-                return false;
-            }
-
-            if(city.value.length < 3) {
-                city_error_message.innerHTML = "City's name must be at least 3 characters long."
-                return false;
-            }
-
-            if(!regex.test(city.value)){
-                city_error_message.innerHTML = "City name may only contain A-Z, a-z, blankspace and _";
-                return false;
-            }
-
-            if(country.value.length < 3) {
-                country_error_message.innerHTML = "Country's name must be at least 3 characters long."
-                return false;
-            }
-
-            if(!regex.test(country.value)){
-                country_error_message.innerHTML = "Name may only contain A-Z, a-z, blankspace and _";
-                return false;
+                if (!regex.test(country.value)) {
+                    country_error_message.innerHTML = "May only contain A-Z, a-z, blankspace and _";
+                    return false;
+                }
             }
             return true;
         }
