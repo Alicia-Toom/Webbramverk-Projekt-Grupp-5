@@ -8,4 +8,17 @@ def add_user(user):
 
 
 def find_by_username(username):
-    return db.session.query(User).filter(User.username == username).first()
+    return db.session.query(User).filter(username == username).first()
+
+
+def update_user():
+    success = False
+    try:
+        db.session.commit()
+        success = True
+    except:
+        db.session.rollback()
+        success = False
+    finally:
+        return success
+

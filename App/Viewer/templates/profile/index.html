@@ -103,17 +103,25 @@
                                             <div class="card-body">
                                                     <div class="form-row">
                                                         <div class="col">
-                                                            <div class="form-group"><label for="city"><strong>City</strong></label><input class="form-control" type="text" placeholder="Enter your City here" name="city"></div>
+                                                            <div class="form-group"><label for="city"><strong>City</strong></label><input class="form-control" type="text" placeholder="{% if user.city is not none %}{{ user.city }} {% else %} Enter your city {% endif %}" name="city"></div>
                                                             <div class="d-flex justify-content-center mb-3" id="city_error_message"> </div>
                                                         </div>
                                                         <div class="col">
-                                                            <div class="form-group"><label for="country"><strong>Country</strong></label><input class="form-control" type="text" placeholder="Enter your Country here" name="country"></div>
+                                                            <div class="form-group"><label for="country"><strong>Country</strong></label><input class="form-control" type="text" placeholder="{% if user.country is not none %}{{ user.country }} {% else %} Enter your Country {% endif %}" name="country"></div>
                                                             <div class="d-flex justify-content-center mb-3" id="country_error_message"> </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
+                                                    <div class="form-group"><button id="submit-button" class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
                                                 </div>
                                             </form>
+                                            {% if success %}
+                                                <div id="success-msg"> <i class="fa fa-check"></i> Information has been successfully updated.
+                                            </div>
+                                            {% elif success == False  %}
+                                                <div id="error-msg"><i class="fa fa-times-circle"></i>  Information could not be updated.
+                                                </div>
+                                            {% else %}
+                                            {% endif %}
                                             </div>
                                         </div>
                                     </div>
