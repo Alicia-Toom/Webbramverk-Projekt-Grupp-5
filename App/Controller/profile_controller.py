@@ -26,14 +26,12 @@ def index_post():
     last_name = request.form['last_name']
     city = request.form['city']
     country = request.form['country']
-    print()
-    new_values = []
-    if first_name:
-        new_values.append(first_name)
-    if last_name:
-        new_values.append(last_name)
-    if city:
-        new_values.append(city)
-    if country:
-        new_values.append(country)
-    return render_template('profile/index.html', user=user, sucess=update_user(user, new_values))
+    if len(first_name) > 0:
+        user.first_name = first_name
+    if len(last_name) > 0:
+        user.last_name = last_name
+    if len(city) > 0:
+        user.city = city
+    if len(country) > 0:
+        user.country = country
+    return render_template('profile/index.html', success=update_user(), user=user)
