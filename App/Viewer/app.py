@@ -38,8 +38,12 @@ def inject_base_context():
 def index():
     # Import test users to database - should only be run once in development environment!
     #create_users()
-
     return render_template('index.html', carousel=Carousel(Book.all(), items_per_row=3))
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 
 if __name__ == '__main__':
