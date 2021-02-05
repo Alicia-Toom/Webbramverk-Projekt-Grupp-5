@@ -3,7 +3,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 from Model.MySQL.Models.users import User
-from Model.MySQL.Repository.users_repo import find_all
+from Model.MySQL.Repository.users_repo import find_all, delete_user
+from Viewer.app import app
 
 
 def login(driver):
@@ -36,13 +37,16 @@ def sign_up(driver):
     password_field = driver.find_element_by_name('password')
     confirm_field = driver.find_element_by_name('confirm_password')
     submit = driver.find_element_by_id('submit')
-    users = find_all()
+    with app.app_context():
+        users = find_all()
     username_field.send_keys(username)
     email_field.send_keys(email)
     password_field.send_keys(password)
     confirm_field.send_keys(password)
-    #submit.send_keys(Keys.RETURN)
-
+    submit.send_keys(Keys.RETURN)
+    time.sleep(5)
+    with app.app_context():
+        delete_user(username)
 
 
 def main():
