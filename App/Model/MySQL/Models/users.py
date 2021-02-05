@@ -10,3 +10,6 @@ class User(db.Model):
     password = db.Column(db.VARCHAR(255))
     city = db.Column(db.String(100), nullable=True)
     country = db.Column(db.String(100), nullable=True)
+
+    def __repr__(self):
+        return f'username {self.username}'

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block head %}
+    <title>Page not found</title>
+    <style>
+        #body-content {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #content {
+            background: black;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div class="card-body" id="body-content">
+            <img src="{{ url_for('static', filename='images/404.png')}}" width="95%", heigh="95%">
+        </div>
+    </div>
+{%  endblock %}
