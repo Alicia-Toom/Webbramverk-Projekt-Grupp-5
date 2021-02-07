@@ -24,9 +24,8 @@ def delete_user(username):
         return success
 
 
-
 def find_by_username(username):
-    return db.session.query(User).filter(username == username).first()
+    return db.session.query(User).filter(User.username == username).first()
 
 
 def update_user():
@@ -39,4 +38,3 @@ def update_user():
         success = False
     finally:
         return success
-
