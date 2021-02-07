@@ -79,7 +79,6 @@ def download_author_photo(path):
                     copy_file = os.path.join(path, file.replace(".json", ".jpg"))
                     shutil.copy(NOT_FOUND, copy_file)
 
-def
 
 def main():
     folder_path = '../../Model/MongoDB/Models/authors_db/'
@@ -89,6 +88,7 @@ def main():
     folder_path = '../../Model/MongoDB/Models/books_db/'
     #download_book_covers(folder_path)
     import_jsons_as_books(folder_path)
+
 
 if __name__ == '__main__':
     main()
