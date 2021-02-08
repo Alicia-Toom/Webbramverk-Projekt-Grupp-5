@@ -1,0 +1,20 @@
+{
+    "authors": ["Walt Whitman"],
+    "country": "United States",
+    "imageLink": "images/leaves-of-grass.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Leaves_of_Grass\n",
+    "pages": 152,
+    "title": "Leaves of Grass",
+    "year": 1855,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":"9780195183429",
+    "publisher": "Oxford University Press; 150th anniversary edition",
+    "publication_date": "2005-04-15",
+    "storyline": "he publication of Leaves of Grass in July 1855 was a landmark event in literary history. Ralph Waldo Emerson judged the book \"the most extraordinary piece of wit and wisdom America has yet contributed.\" Nothing like the volume had ever appeared before. Everything about it--the unusual jacket and title page, the exuberant preface, the twelve free-flowing, untitled poems embracing every realm of experience--was new. The 1855 edition broke new ground in its relaxed style, which prefigured free verse; in its sexual candor; in its images of racial bonding and democratic togetherness; and in the intensity of its affirmation of the sanctity of the physical world.",
+    "characters": [
+        "none"
+    ]
+}
