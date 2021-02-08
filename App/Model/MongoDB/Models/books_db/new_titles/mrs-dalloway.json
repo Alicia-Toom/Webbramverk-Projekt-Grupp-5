@@ -1,0 +1,20 @@
+{
+    "authors":  ["Virginia Woolf"],
+    "country": "United Kingdom",
+    "imageLink": "images/mrs-dalloway.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Mrs_Dalloway\n",
+    "pages": 216,
+    "title": "Mrs Dalloway",
+    "year": 1925,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":"9780156628709",
+    "publisher": "Mariner Books; First edition",
+    "publication_date": "1990-01-01",
+    "storyline": "In this vivid portrait of a single day in a woman’s life, Mrs. Clarissa Dalloway is preoccupied with the last-minute details of preparation for a party while in her mind she is something much more than a perfect society hostess. As she readies her house for friends and neighbors, she is flooded with remembrances of the past—the passionate loves of her carefree youth, her practical choice of husband, and the approach and retreat of war. And, met with the realities of the present, Clarissa reexamines the choices that brought her there, hesitantly looking ahead to the unfamiliar work of growing old.\n\nFrom the introspective Clarissa, to the lover who never fully recovered from her rejection, to a war-ravaged stranger in the park, the characters and scope of Mrs. Dalloway reshape our sense of ordinary life making it one of the most “moving, revolutionary artworks of the twentieth century” (Michael Cunningham).",
+    "characters": [
+        "none"
+    ]
+}
