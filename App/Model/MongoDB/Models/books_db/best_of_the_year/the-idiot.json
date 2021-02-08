@@ -1,0 +1,20 @@
+{
+    "authors": ["Fyodor Dostoevsky"],
+    "country": "Russia",
+    "imageLink": "images/the-idiot.jpg",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/The_Idiot\n",
+    "pages": 656,
+    "title": "The Idiot",
+    "year": 1869,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":"9781853261756",
+    "publisher": "Wordsworth Editions Ltd; 0 edition",
+    "publication_date": "1998-04-01",
+    "storyline": "An introduction by Agnes Cardinal, Prince Myshkin returns to Russia from an asylum in Switzerland. As he becomes embroiled in the frantic amatory and financial intrigues which centre around a cast of brilliantly realised characters and which ultimately lead to tragedy, he emerges as a unique combination of the Christian ideal of perfection and Dostoevsky's own views, afflictions and manners. His serene selflessness is contrasted with the worldly qualities of every other character in the novel. Dostoevsky supplies a harsh indictment of the Russian ruling class of his day who have created a world which cannot accomodate the goodness of this idiot.",
+    "characters": [
+        "none"
+    ]
+  }

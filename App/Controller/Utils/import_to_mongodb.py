@@ -1,13 +1,14 @@
 from urllib.error import HTTPError
 from Model.MongoDB.Models.authors import Author
-from Model.MongoDB.Models.books import Book
+from Model.MongoDB.Models.books import Book, BestBook
 import json
 import os
 import urllib.request
 from bson.binary import Binary
 import shutil
 
-NOT_FOUND = "Viewer/static/images/noimage.jpg"
+NOT_FOUND = "../../Viewer/static/images/noimage.jpg"
+#NOT_FOUND = "Model/mongoDB/Models/best_of_the_year/noimages.jpg"
 
 
 def import_jsons_as_books(path):
@@ -23,8 +24,10 @@ def import_jsons_as_books(path):
                         cover_image = Binary(c.read())  # read the data from the file
                         json_data['cover_image'] = cover_image
 
-                new_book = Book(json_data)
-                new_book.save()
+                # new_book = Book(json_data)
+                # new_book.save()
+                # new_book = BestBook(json_data)
+                # new_book.save()
 
 
 def download_book_covers(path):
@@ -80,13 +83,19 @@ def download_author_photo(path):
                     shutil.copy(NOT_FOUND, copy_file)
 
 
+
 def main():
     folder_path = '../../Model/MongoDB/Models/authors_db/'
     #download_author_photo(folder_path)
-    import_jsons_as_authors(folder_path)
+    #import_jsons_as_authors(folder_path)
+
 
     folder_path = '../../Model/MongoDB/Models/books_db/'
     #download_book_covers(folder_path)
+    #import_jsons_as_books(folder_path)
+
+    folder_path = '../../Model/MongoDB/Models/books_db/best_of_the_year'
+    download_book_covers(folder_path)
     import_jsons_as_books(folder_path)
 
 
