@@ -1,0 +1,20 @@
+ {
+    "authors": ["Charles Dickens"],
+    "country": "United Kingdom",
+    "imageLink": "images/great-expectations.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Great_Expectations\n",
+    "pages": 194,
+    "title": "Great Expectations",
+    "year": 1861,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":"9780679405795",
+    "publisher": "Everyman's Library",
+    "publication_date": "1992-03-10",
+    "storyline": "One of Charles Dickens’s most fascinating novels, Great Expectations follows the orphan Pip as he leaves behind a childhood of misery and poverty after an anonymous benefactor offers him a chance at the life of a gentleman.\n\nFrom the young Pip’s first terrifying encounter with the convict Magwitch in the gloom of a graveyard to the splendidly morbid set pieces in Miss Havisham’s mansion to the magnificently realized boat chase down the Thames, Great Expectations is filled with the transcendent excitement that Dickens could so abundantly provide.\n\nWritten in 1860, at the height of his maturity, it also reveals the novelist’s bittersweet understanding of the extent to which our deepest moral dilemmas are born of our own obsessions and illusions.",
+    "characters": [
+        "none"
+    ]
+  }
