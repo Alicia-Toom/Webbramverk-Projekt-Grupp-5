@@ -14,8 +14,14 @@
                     <div class="row mb-3">
                         <div class="col-lg-4">
                             <div class="card mb-3">
-                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="static/images/dog.jpeg" width="160" height="160">
-                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Change Photo</button></div>
+                                <div class="col">
+                                    <div class="text-center"> <span class="bold"></span>{{ user.username }} <br /> </div>
+                                </div>
+                                <div class="col">
+                                    <div class="text-center"> <span class="bold"></span> {{ user.email}} <br /> </div>
+                                </div>
+                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="static/images/default.jpeg" width="160" height="160">
+                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button" id="">Change Photo</button></div>
                                 </div>
                             </div>
                             <div class="card shadow mb-4">
@@ -80,12 +86,7 @@
                                         <div class="card-body">
                                             <form action="/profile" onsubmit="return validate()" method="POST" name="profile">
                                                 <div class="form-row">
-                                                    <div class="col">
-                                                        <div> <span class="bold">Username:</span> {{ user.username }} <br /> </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div> <span class="bold">Email:</span> {{ user.email}} <br /> </div>
-                                                    </div>
+
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col">
