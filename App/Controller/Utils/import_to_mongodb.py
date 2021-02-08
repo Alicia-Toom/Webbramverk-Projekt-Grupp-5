@@ -1,6 +1,6 @@
 from urllib.error import HTTPError
 from Model.MongoDB.Models.authors import Author
-from Model.MongoDB.Models.books import Book, BestBook, NewTitle
+from Model.MongoDB.Models.books import Book, BestBook, NewTitle, HotTitles
 import json
 import os
 import urllib.request
