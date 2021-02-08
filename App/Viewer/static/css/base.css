@@ -24,6 +24,10 @@ main {
     background: -webkit-linear-gradient(top, #b3b3b0 0%, #e3e2dd 500px);
 }
 
+#carousel-area {
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(150,150,150,1) 50%,rgba(10,10,10,1) 100%);
+}
+
 #content #search {
     background-image: url("/static/Images/front_page/search_background.jpg");
     background-size: 100% auto;
@@ -32,60 +36,76 @@ main {
 
 #content #search #search-nav-container {
     width: 50%;
-    background-color: #FFFFFF;
+    background-color: black;
     padding: 15px
 }
 
 #content #search #search-nav-container .nav-pills {
+    background-color: black;
     padding-bottom: 10px;
 }
 
 #content #search #search-nav-container .nav-pills .nav-link.active {
-    color: black;
-    background: none;
+    color: white;
+    background-color: black;
     border-radius: 0;
 }
 
-#content #book-carousel-container {
+#content #boty-carousel-container {
     width: 80%;
-    height: 550px;
-    padding: 150px 0;
+    height: 30rem;
+    padding: 2rem 9.375rem;
 }
 
-#content #book-carousel-container .carousel-indicators {
-    margin-bottom: -20px;
+#content #hot-titles-carousel-container {
+    width: 80%;
+    height: 30rem;
+    padding: 2rem 9.375rem;
+}
+
+#content #new-titles-carousel-container {
+    width: 80%;
+    height: 30rem;
+    padding: 2rem 9.375rem;
+}
+
+#content .carousel-indicators {
+    margin-bottom: 4rem;
     color: #000000;
 }
 
-#content #book-carousel-container .carousel-item .row {
-    padding: 0 100px;
+#content .carousel-item .row {
+    padding: 0 6.25rem;
 }
 
-#content #book-carousel .carousel-item-book {
+#content .carousel-item-book {
     text-align: center;
 }
 
-#content #book-carousel .carousel-item-book {
+#content .carousel-item-book {
     text-align: center;
 }
 
-#content #book-carousel .carousel-item-book a {
-    color: #000000;
+#content .carousel-item-book a {
+    color: #FFF;
+    text-shadow: 1px 1px #000;
+    text-decoration: none;
 }
 
-#content #book-carousel .carousel-item-book img {
-    width: 200px;
-    height: 300px;
+#content .carousel-item-book img {
+    width: 12.5rem;
+    height: 18.75rem;
 
 }
 
-#content #book-carousel .carousel-item-book-caption{
-    margin-top: 25px;
-    margin-bottom: 40px;
+#content .carousel-item-book-caption{
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 
-#content #book-carousel .carousel-control-prev .carousel-control-prev-icon {
+#content .carousel-control-prev .carousel-control-prev-icon {
     color: black;
+    margin-bottom: 3rem;
 }
 
 #content .bold {
@@ -93,7 +113,8 @@ main {
 }
 
 footer {
-    margin: 0 15%;
+    height: 100%;
+    margin: 1rem 0rem;
     color: #FFFFFF;
 }
 
@@ -112,11 +133,17 @@ footer p
 }
 
 footer .social-media a {
-    font-size: 24px;
-    padding: 0 5px;
+    font-size: 1.5rem;
+    padding: 0 0.3125rem;
 }
 
 .container-fluid {
     color: #000000;
     text-decoration: none;
+}
+
+.carousel-title {
+    text-align: center;
+    text-shadow: 1px 1px #000;
+    color: #f4ac00;
 }

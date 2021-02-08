@@ -4,7 +4,7 @@ from flask import session, redirect, url_for
 
 
 class Carousel:
-    def __init__(self, items, max_rows=2, items_per_row=4):
+    def __init__(self, items, max_rows=10, items_per_row=3):
         self.items = items
         self.max_rows = max_rows
         self.items_per_row = items_per_row
