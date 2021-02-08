@@ -1,0 +1,20 @@
+{
+    "authors": ["Joseph Conrad"],
+    "country": "United Kingdom",
+    "imageLink": "images/nostromo.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Nostromo\n",
+    "pages": 320,
+    "title": "Nostromo",
+    "year": 1904,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":"9781950330218",
+    "publisher": "Ancient Wisdom Publications",
+    "publication_date": "2019-04-17",
+    "storyline": "In his \"Author’s Note\" in this edition of Nostromo, Joseph Conrad provides a detailed explanation of the inspirational origins of his novel. There he relates how, as a young man of about seventeen, while serving aboard a ship in the Gulf of Mexico, he heard the story of a man who had stolen, single-handedly, \"a whole lighter-full of silver\". As Conrad goes on to relate, he forgot about the story until some twenty-five years later when he came across a travelogue in a used-book shop in which the author related how he worked for years aboard a schooner whose master claimed to be that very thief who had stolen the silver.",
+    "characters": [
+        "none"
+    ]
+  }

@@ -1,0 +1,20 @@
+{
+    "authors": ["Denis Diderot"],
+    "country": "France",
+    "imageLink": "images/jacques-the-fatalist.jpg",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist\n",
+    "pages": 596,
+    "title": "Jacques the Fatalist",
+    "year": 1796,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":"9780199537952",
+    "publisher": "Oxford University Press; 1st edition",
+    "publication_date": "2009-08-31",
+    "storyline": "Jacques the Fatalist is a provocative exploration of the problems of human existence, destiny, and free will. In the introduction to this brilliant translation, David Coward explains the philosophical basis of Diderot's fascination with fate and examines the experimental and influential literary techniques that make Jacques the Fatalist a classic of the Enlightenment.",
+    "characters": [
+        "none"
+    ]
+  }

@@ -1,0 +1,20 @@
+{
+    "authors": ["Geoffrey Chaucer"],
+    "country": "England",
+    "imageLink": "images/the-canterbury-tales.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/The_Canterbury_Tales\n",
+    "pages": 544,
+    "title": "The Canterbury Tales",
+    "year": 1450,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":"0141393211",
+    "publisher": "Penguin Classics; Revised edition",
+    "publication_date": "2009-02-04",
+    "storyline": "n The Canterbury Tales Chaucer created one of the great touchstones of English literature, a masterly collection of chivalric romances, moral allegories and low farce. A story-telling competition between a group of pilgrims from all walks of life is the occasion for a series of tales that range from the Knight’s account of courtly love and the ebullient Wife of Bath’s Arthurian legend, to the ribald anecdotes of the Miller and the Cook. Rich and diverse, The Canterbury Tales offer us an unrivalled glimpse into the life and mind of medieval England.\n\nFor more than sixty-five years, Penguin has been the leading publisher of classic literature in the English-speaking world. With more than 1,500 titles, Penguin Classics represents a global bookshelf of the best works throughout history and across genres and disciplines. Readers trust the series to provide authoritative texts enhanced by introductions and notes by distinguished scholars and contemporary authors, as well as up-to-date translations by award-winning translators.",
+    "characters": [
+        "none"
+    ]
+  }
