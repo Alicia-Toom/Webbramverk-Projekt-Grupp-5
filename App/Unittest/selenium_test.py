@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-from Model.MySQL.Models.users import User
 from Model.MySQL.Repository.users_repo import find_all, delete_user
 from Viewer.app import app
 
@@ -30,7 +29,7 @@ def change_name(driver):
 def sign_up(driver):
     password = "thisissecret"
     username = "selenium"
-    email = "email@email.com"
+    email = "mail@email.com"
     driver.get('http://127.0.0.1:5000/login/signup')
     username_field = driver.find_element_by_name('username')
     email_field = driver.find_element_by_name('email')

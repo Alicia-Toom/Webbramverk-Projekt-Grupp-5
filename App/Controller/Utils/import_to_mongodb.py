@@ -1,6 +1,6 @@
 from urllib.error import HTTPError
 from Model.MongoDB.Models.authors import Author
-from Model.MongoDB.Models.books import Book, BestBook
+from Model.MongoDB.Models.books import Book, BestBook, NewTitle
 import json
 import os
 import urllib.request
@@ -24,10 +24,10 @@ def import_jsons_as_books(path):
                         cover_image = Binary(c.read())  # read the data from the file
                         json_data['cover_image'] = cover_image
 
-                # new_book = Book(json_data)
-                # new_book.save()
-                # new_book = BestBook(json_data)
-                # new_book.save()
+                #new_book = Book(json_data)
+                new_book = BestBook(json_data)
+                # new_book = NewTitle(json_data)
+                new_book.save()
 
 
 def download_book_covers(path):
@@ -95,8 +95,12 @@ def main():
     #import_jsons_as_books(folder_path)
 
     folder_path = '../../Model/MongoDB/Models/books_db/best_of_the_year'
-    download_book_covers(folder_path)
+    #download_book_covers(folder_path)
     import_jsons_as_books(folder_path)
+
+    #folder_path = '../../Model/MongoDB/Models/books_db/new_titles'
+    #download_book_covers(folder_path)
+    #import_jsons_as_books(folder_path)
 
 
 if __name__ == '__main__':
