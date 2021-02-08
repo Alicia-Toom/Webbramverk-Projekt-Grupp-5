@@ -20,12 +20,11 @@ def index():
 def do_login():
     username = request.form['username']
     password = request.form['password']
-    user = find_by_username(username)
+    user = find_by_username(username.lower())
     if user:
         if bcrypt.checkpw(str.encode(password), user.password):
             session['username'] = user.username
             return redirect(url_for('profile.index'))
-
     return render_template('login/error.html')
 
 
@@ -50,7 +49,6 @@ def signup_post():
         password = request.form['password']
         salt = bcrypt.gensalt()
         hashed_password = bcrypt.hashpw(str.encode(password), salt)
-        user = User(username=username, email=email, password=hashed_password)
-
+        user = User(username=username.lower(), email=email, password=hashed_password)
         add_user(user)
         return redirect(url_for('login.index'))
