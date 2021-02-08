@@ -8,6 +8,10 @@ class Book(Document):
 class BestBook(Document):
     collection = db.bestbooks
 
-
+    
 class NewTitle(Document):
     collection = db.newbooks
+
+    
+class HotTitles(Document):
+    collection = db.hottitles

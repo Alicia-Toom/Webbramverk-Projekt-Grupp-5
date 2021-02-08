@@ -1,0 +1,20 @@
+{
+    "authors": ["Dante Alighieri"],
+    "country": "Italy",
+    "imageLink": "images/the-divine-comedy.jpg",
+    "language": "Italian",
+    "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
+    "pages": 928,
+    "title": "The Divine Comedy",
+    "year": 1315,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":"9780451208637",
+    "publisher": "Berkley; Illustrated edition",
+    "publication_date": "2003-05-27",
+    "storyline": "Belonging in the immortal company of the great works of literature, Dante Alighieri’s poetic masterpiece, The Divine Comedy, is a moving human drama, an unforgettable visionary journey through the infinite torment of Hell, up the arduous slopes of Purgatory, and on to the glorious realm of Paradise—the sphere of universal harmony and eternal salvation.\n\nNow, for the first time, John Ciardi’s brilliant and authoritative translations of Dante’s three soaring canticles—The Inferno, The Purgatorio, and The Paradiso—have been gathered together in a single volume. Crystallizing the power and beauty inherent in the great poet’s immortal conception of the aspiring soul, The Divine Comedy is a dazzling work of sublime truth and mystical intensity.",
+    "characters": [
+        "none"
+    ]
+  }
