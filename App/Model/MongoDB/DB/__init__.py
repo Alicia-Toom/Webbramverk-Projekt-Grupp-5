@@ -56,6 +56,10 @@ class Document(dict, ABC):
         return ResultList(cls(item) for item in cls.collection.find(kwargs))
 
     @classmethod
+    def find_by_array(cls, field, array):
+        return ResultList(cls(item) for item in cls.collection.find({field: {'$in': array}}))
+
+    @classmethod
     def delete(cls, **kwargs):
         cls.collection.delete_many(kwargs)
 
