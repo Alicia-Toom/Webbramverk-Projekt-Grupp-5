@@ -1,7 +1,56 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/search.css')}}">
+<title>Search results</title>
+
+{% endblock %}
 
 {% block content %}
-    <h1>This is the search page</h1>
+<div id="wrapper">
 
-    <h3 id="text-content"></h3>
-{%  endblock %}
+  <h1>Results for:</h1>
+  <h2>Author</h2>
+  <table id="authors" class="center">
+  <tr>
+  <td><img src="{{ photo }}" alt="Photo: {{ name }}" width="50" height="50">{{ name }}</td>
+  </tr>
+  <tr>
+  <td><img src="{{ photo }}" alt="Photo: {{ name }}" width="50" height="50">{{ name }}</td>
+  </tr>
+  <tr>
+  <td><img src="{{ photo }}" alt="Photo: {{ name }}" width="50" height="50">{{ name }}</td>
+  </tr>
+  </table>
+
+  <h2>Books</h2>
+
+  <table id="books" class="center">
+  <tr>
+  <td>Nameless b00k.</td>
+  </tr>
+  <tr>
+  <td>Nameless b00k.</td>
+  </tr>
+  <tr>
+  <td>Nameless b00k.</td>
+  </tr>
+  </table>
+
+  <h2>Bookseries?</h2>
+
+  <table id="series" class="center">
+  <tr>
+  <td>Nameless series.</td>
+  </tr>
+  <tr>
+  <td>Nameless series.</td>
+  </tr>
+  <tr>
+  <td>Nameless series.</td>
+  </tr>
+  </table>
+</div>
+
+
+{% endblock %}
