@@ -38,6 +38,9 @@
   </div>
 </div>
 <div id="book-carousel-container" class="container justify-content-center">
+  <h1 style="text-align: center">
+    Best of the Year
+  </h1>
   <div id="book-carousel" class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       {% for row in carousel.rows() %}
@@ -49,18 +52,20 @@
       <div class="carousel-item {% if loop.first %} active {% endif %}">
         <div class="row">
         {% for book in row %}
-          <div class="col-12 col-md d-flex align-items-center justify-content-center">
-            <div class="carousel-item-book">
-              <img src="/books/{{ book._id }}/cover" class="carousel-item-book-cover">
-              <div class="carousel-item-book-caption">
-                <h5><a href="/books/{{ book._id }}">{{ book.title }}</a></h5>
-                <!--
-                <p>{{ book.storyline }}</p>
-                -->
+          {% if book.ISBN in best_of_the_year %}
+            <div class="col-12 col-md d-flex align-items-center justify-content-center">
+              <div class="carousel-item-book">
+                <img src="/books/{{ book._id }}/cover" class="carousel-item-book-cover">
+                <div class="carousel-item-book-caption">
+                  <h5><a href="/books/{{ book._id }}">{{ book.title }}</a></h5>
+                  <!--
+                  <p>{{ book.storyline }}</p>
+                  -->
+                </div>
               </div>
             </div>
-          </div>
-        {% endfor %}
+          {% endif %}
+        {% endfor%}
         </div>
       </div>
       {% endfor %}

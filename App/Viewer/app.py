@@ -11,6 +11,7 @@ from Controller.login_controller import login
 from Controller.profile_controller import profile
 from Model.MongoDB.Models.books import Book
 from Model.MySQL.DB import SECRET_KEY, db
+from Model.MongoDB.Models.book_categories import *
 
 app = Flask(__name__)
 app.debug = True
@@ -38,7 +39,13 @@ def inject_base_context():
 def index():
     # Import test users to database - should only be run once in development environment!
     #create_users()
-    return render_template('index.html', carousel=Carousel(Book.all(), items_per_row=3))
+    return render_template(
+        'index.html',
+        carousel=Carousel(Book.all(), items_per_row=3),
+        best_of_the_year=BEST_OF_THE_YEAR,
+        hot_titles=HOT_TITLES,
+        new_titles=NEW_TITLES
+    )
 
 
 @app.errorhandler(404)
