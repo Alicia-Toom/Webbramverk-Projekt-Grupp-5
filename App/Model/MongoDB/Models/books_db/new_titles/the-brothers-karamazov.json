@@ -1,0 +1,20 @@
+{
+    "authors": ["Fyodor Dostoevsky"],
+    "country": "Russia",
+    "imageLink": "images/the-brothers-karamazov.jpg",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov\n",
+    "pages": 824,
+    "title": "The Brothers Karamazov",
+    "year": 1880,
+    "genres": [
+        "fiction"
+    ],
+    "ISBN":" 9780374528379",
+    "publisher": "Farrar, Straus and Giroux; 12th edition",
+    "publication_date": "2002-06-14",
+    "storyline": "\nThe Brothers Karamasov is a murder mystery, a courtroom drama, and an exploration of erotic rivalry in a series of triangular love affairs involving the “wicked and sentimental” Fyodor Pavlovich Karamazov and his three sons―the impulsive and sensual Dmitri; the coldly rational Ivan; and the healthy, red-cheeked young novice Alyosha. Through the gripping events of their story, Dostoevsky portrays the whole of Russian life, is social and spiritual striving, in what was both the golden age and a tragic turning point in Russian culture.",
+    "characters": [
+        "none"
+    ]
+}
