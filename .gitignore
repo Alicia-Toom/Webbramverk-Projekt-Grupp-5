@@ -132,3 +132,5 @@ dmypy.json
 .idea
 /App/Model/MongoDB/DB/db_settings/__init__.py
 /App/Model/MySQL/DB/db_settings/
+App/Model/MySQL/DB/users.sql3
+

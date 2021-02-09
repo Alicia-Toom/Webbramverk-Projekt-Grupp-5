@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+{% block head %}
+<title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../../Static/css/profile.css">
+{%  endblock %}
+{% block content %}
+<div id="wrapper">
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <h3></h3>
+                <div class="container-fluid" style="width: 70%;">
+                    <div class="row mb-3">
+                        <div class="col-lg-4">
+                            <div class="card mb-3">
+                                <div class="col">
+                                    <div class="text-center"> <span class="bold"></span>{{ user.username }} <br /> </div>
+                                </div>
+                                <div class="col">
+                                    <div class="text-center"> <span class="bold"></span> {{ user.email}} <br /> </div>
+                                </div>
+                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="static/images/default.jpeg" width="160" height="160">
+                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button" id="">Change Photo</button></div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3" style="margin: 0px;">
+                                    <h6 class="text-primary font-weight-bold m-0">Book Ratings</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="small font-weight-bold">1 Star<span class="float-right">20%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="sr-only">20%</span></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">2 Star<span class="float-right">40%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only">40%</span></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">3 Star<span class="float-right">60%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60%</span></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">4 Star<span class="float-right">80%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">5 Star<span class="float-right">100%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only">100%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row mb-3 d-none">
+                                <div class="col">
+                                    <div class="card text-white bg-primary shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-white bg-success shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card shadow mb-3">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 font-weight-bold">User Settings</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form action="/profile" onsubmit="return validate()" method="POST" name="profile">
+                                                <div class="form-row">
+
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="first_name"><strong>First Name</strong></label><input class="form-control" type="text" placeholder="{% if user.first_name is not none %}{{ user.first_name }} {% else %} Enter your First name {% endif %}" name="first_name"></div>
+                                                        <div class="d-flex justify-content-center mb-3" id="first_name_error_message"> </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group"><label for="last_name"><strong>Last Name</strong></label><input class="form-control" type="text" placeholder="{% if user.last_name is not none %}{{ user.last_name }} {% else %} Enter your Last name {% endif %}" name="last_name"></div>
+                                                        <div class="d-flex justify-content-center mb-3" id="last_name_error_message"> </div>
+                                                    </div>
+                                                </div>
+                                            <div class="card-header py-3">
+                                                <p class="text-primary m-0 font-weight-bold">Contact Settings</p>
+                                            </div>
+                                            <div class="card-body">
+                                                    <div class="form-row">
+                                                        <div class="col">
+                                                            <div class="form-group"><label for="city"><strong>City</strong></label><input class="form-control" type="text" placeholder="{% if user.city is not none %}{{ user.city }} {% else %} Enter your city {% endif %}" name="city"></div>
+                                                            <div class="d-flex justify-content-center mb-3" id="city_error_message"> </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group"><label for="country"><strong>Country</strong></label><input class="form-control" type="text" placeholder="{% if user.country is not none %}{{ user.country }} {% else %} Enter your Country {% endif %}" name="country"></div>
+                                                            <div class="d-flex justify-content-center mb-3" id="country_error_message"> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group"><button id="submit-button" class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
+                                                </div>
+                                            </form>
+                                            {% if success %}
+                                                <div id="success-msg"> <i class="fa fa-check"></i> Information has been successfully updated.
+                                            </div>
+                                            {% elif success == False  %}
+                                                <div id="error-msg"><i class="fa fa-times-circle"></i>  Information could not be updated.
+                                                </div>
+                                            {% else %}
+                                            {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%  endblock %}
+{% block scripts %}
+      <script>
+        function validate() {
+            const regex = /[A-Za-z\s\-]/gm;
+            let first_name = document.profile.first_name;
+            let last_name = document.profile.last_name;
+            let city = document.profile.city;
+            let country = document.profile.country;
+            let first_name_error_message = document.getElementById("first_name_error_message");
+            let last_name_error_message = document.getElementById("last_name_error_message");
+            let city_error_message = document.getElementById("city_error_message");
+            let country_error_message = document.getElementById("country_error_message");
+            first_name_error_message.innerHTML = "";
+            last_name_error_message.innerHTML = "";
+            city_error_message.innerHTML = "";
+            country_error_message.innerHTML = "";
+
+            if(first_name.value.length !== 0){
+                if(first_name.value.length < 3) {
+                    first_name_error_message.innerHTML = "Must be at least 3 characters long.";
+                    return false;
+                }
+                if(!regex.test(first_name.value)){
+                first_name_error_message.innerHTML = "May only contain A-Z, a-z, blank space and _";
+                return false;
+                }
+            }
+
+
+            if(last_name.value.length !== 0){
+                if(last_name.value.length < 3) {
+                    last_name_error_message.innerHTML = "Must be at least 3 characters long.";
+                    return false;
+                }
+                if(!regex.test(last_name.value)){
+                last_name_error_message.innerHTML = "May only contain A-Z, a-z, blank space and _";
+                return false;
+                }
+            }
+
+            if(city.value.length !== 0) {
+                if (city.value.length < 3) {
+                    city_error_message.innerHTML = "Must be at least 3 characters long."
+                    return false;
+                }
+                if (!regex.test(city.value)) {
+                    city_error_message.innerHTML = "May only contain A-Z, a-z, blankspace and _";
+                    return false;
+                }
+            }
+            if(country.value.length !== 0) {
+                if (country.value.length < 3) {
+                    country_error_message.innerHTML = "Must be at least 3 characters long."
+                    return false;
+                }
+
+                if (!regex.test(country.value)) {
+                    country_error_message.innerHTML = "May only contain A-Z, a-z, blankspace and _";
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+{% endblock %}
