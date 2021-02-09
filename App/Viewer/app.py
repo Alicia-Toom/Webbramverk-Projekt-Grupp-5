@@ -34,32 +34,30 @@ app.register_blueprint(login)
 app.register_blueprint(profile)
 app.register_blueprint(search)
 
+Bootstrap(app)
+
 
 @app.context_processor
 def inject_base_context():
     return dict(authenticated=is_authenticated(), tab="app")
-  
-
-Bootstrap(app)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
     # Import test users to database - should only be run once in development environment!
     # create_users()
     return render_template(
         'index.html',
-        form=form,
-        message=message,
-        names=names,
         boty_carousel=Carousel(Book.find_by_array('ISBN', BEST_OF_THE_YEAR)),
         hot_titles_carousel=Carousel(Book.find_by_array('ISBN', HOT_TITLES)),
         new_titles_carousel=Carousel(Book.find_by_array('ISBN', NEW_TITLES))
     )
 
 
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
+
 
 if __name__ == '__main__':
     app.run()
-
-
