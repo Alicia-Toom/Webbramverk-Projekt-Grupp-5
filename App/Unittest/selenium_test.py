@@ -50,9 +50,10 @@ def sign_up(driver):
 
 def main():
     driver = webdriver.Chrome('chromedriver.exe')
-    #login(driver)
-    #change_name(driver)
-    sign_up(driver)
+    time.sleep(2)
+    login(driver)
+    change_name(driver)
+    #sign_up(driver)
     time.sleep(5)
     driver.close()
 

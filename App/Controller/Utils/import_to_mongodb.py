@@ -26,9 +26,8 @@ def import_jsons_as_books(path):
 
                 new_book = Book(json_data)
                 #new_book = BestBook(json_data)
-                # new_book = NewTitle(json_data)
-                # new_book = HotTitles(json_data)
-
+                #new_book = NewTitle(json_data)
+                #new_book = HotTitles(json_data)
                 new_book.save()
 
 
@@ -93,22 +92,23 @@ def main():
 
 
     folder_path = '../../Model/MongoDB/Models/books_db/'
-    download_book_covers(folder_path)
-    import_jsons_as_books(folder_path)
+    #download_book_covers(folder_path)
+    #import_jsons_as_books(folder_path)
 
 
     folder_path = '../../Model/MongoDB/Models/books_db/best_of_the_year'
-    download_book_covers(folder_path)
-    import_jsons_as_books(folder_path)
+    #download_book_covers(folder_path)
+    #import_jsons_as_books(folder_path)
 
     folder_path = '../../Model/MongoDB/Models/books_db/new_titles'
     # download_book_covers(folder_path)
-    import_jsons_as_books(folder_path)
+    #import_jsons_as_books(folder_path)
 
 
     folder_path = '../../Model/MongoDB/Models/books_db/hot_titles'
-    download_book_covers(folder_path)
-    import_jsons_as_books(folder_path)
+    #download_book_covers(folder_path)
+    #import_jsons_as_books(folder_path)
+
 
 
 if __name__ == '__main__':
