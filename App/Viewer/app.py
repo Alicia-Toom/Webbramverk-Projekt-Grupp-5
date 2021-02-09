@@ -40,8 +40,6 @@ def inject_base_context():
 
 @app.route('/')
 def index():
-    # Import test users to database - should only be run once in development environment!
-    # create_users()
     return render_template(
         'index.html',
         boty_carousel=Carousel(Book.find_by_array('ISBN', BEST_OF_THE_YEAR)),
