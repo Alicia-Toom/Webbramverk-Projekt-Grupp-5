@@ -1,14 +1,10 @@
 import os
-
 from flask_sqlalchemy import SQLAlchemy
-
 from Viewer.Routes.authors_routes import authors
 from Viewer.Routes.books_routes import books
-
 from Viewer.Routes.search_routes import *
 from flask_bootstrap import Bootstrap
 from data import *
-
 from Controller.Utils.commons import Carousel, is_authenticated
 from flask import Flask, render_template
 from Viewer.Routes.login_routes import login
