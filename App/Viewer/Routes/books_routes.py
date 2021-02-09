@@ -35,6 +35,7 @@ def book(book_id):
     return render_template('books/book.html', book=chosen_book, rec_books=recommended_books)
 
 
+
 @books.route('/books/<book_id>/cover')
 def cover(book_id):
     book = Book.find(_id=ObjectId(book_id)).first_or_none()
