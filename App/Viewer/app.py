@@ -35,6 +35,7 @@ app.register_blueprint(books)
 app.register_blueprint(authors)
 app.register_blueprint(login)
 app.register_blueprint(profile)
+app.register_blueprint(search)
 
 
 @app.context_processor
@@ -47,17 +48,6 @@ Bootstrap(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    names = get_names(AUTHORS)
-    form = NameForm()
-    message = ""
-    if form.validate_on_submit():
-        name = form.name.data
-        if name.lower() in names:
-            form.name.data = ""
-            id = get_id(AUTHORS, name)
-            return redirect(url_for('author', id=id))
-        else:
-            message = "No results"
     # Import test users to database - should only be run once in development environment!
     # create_users()
     return render_template(
@@ -71,18 +61,8 @@ def index():
     )
 
 
-@app.route('/search/<id>')
-def author(id):
-    id, name, photo = get_author(AUTHORS, id)
-    if name == "Unknown":
-        return render_template('404.html'), 404
-    else:
-        return render_template('search.html', id=id, name=name, photo=photo)
-
-@app.errorhandler(404)
-def page_not_found(error):
-    return render_template('404.html'), 404
-
 
 if __name__ == '__main__':
     app.run()
+
+
