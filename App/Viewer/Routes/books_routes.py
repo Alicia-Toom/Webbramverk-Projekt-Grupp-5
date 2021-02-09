@@ -1,8 +1,7 @@
-from random import shuffle
+from random import shuffle, sample
 from bson import ObjectId
 from flask import render_template, make_response, abort, Blueprint
-
-from Controller.Utils.commons import DataIndex
+from Controller.Utils.commons import DataIndex, compare_strings_in_lists
 from Model.MongoDB.Models.books import Book
 
 books = Blueprint('books', __name__)
@@ -20,18 +19,21 @@ def index():
 
 @books.route('/books/<book_id>')
 def book(book_id):
-    book = Book.find(_id=ObjectId(book_id)).first_or_none()
-    #if book is not None:
-    rec_books = []
-    books = Book.find(genres=book.genres[0])
-    while len(rec_books) < 4:
-        for _ in books:
-            if _['_id'] != book['_id']:
-                rec_books.append(_)
-    shuffle(rec_books)
-    return render_template('books/book.html', book=book, rec_books=rec_books)
-    #else:
-    #    abort(404)
+    chosen_book = Book.find(_id=ObjectId(book_id)).first_or_none()
+
+    matched_books = []
+    for b in Book.all():
+        if compare_strings_in_lists(chosen_book['genres'], b['genres']):
+            if b['_id'] != chosen_book['_id']:
+                matched_books.append(b)
+
+    if len(matched_books) > 2:
+        recommended_books = sample(matched_books, 3)
+    else:
+        recommended_books = matched_books + ([chosen_book] * (3 - len(matched_books)))
+
+    return render_template('books/book.html', book=chosen_book, rec_books=recommended_books)
+
 
 
 @books.route('/books/<book_id>/cover')

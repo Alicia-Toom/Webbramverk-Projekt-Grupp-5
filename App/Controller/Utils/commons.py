@@ -52,3 +52,11 @@ def authenticated(fail_route='index'):
 
 def is_authenticated():
     return 'username' in session
+
+
+def compare_strings_in_lists(list_x, list_y):
+    for x in list_x:
+        for y in list_y:
+            if x.lower() == y.lower():
+                return True
+    return False

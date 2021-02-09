@@ -1,7 +1,4 @@
-
 {% extends "base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
-
 {% block head %}
 <title>Internet Literature DataBase</title>
 {%  endblock %}
@@ -17,15 +14,10 @@
         </li>
       </ul>
       <div class="tab-content" id="search-nav-content">
-        <div>
-
-            {{ wtf.quick_form(form) }}
-
-        </div>
-<!--     <div class="tab-pane fade show active" id="search-book" role="tabpanel" aria-labelledby="search-book-tab">
-          <form>
+        <div class="tab-pane fade show active" id="search-book" role="tabpanel" aria-labelledby="search-book-tab">
+          <form action="/search" method="POST">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Search for Book's title or ISBN">
+              <input type="text" name="books_query" class="form-control" placeholder="Search for Book's title or ISBN">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
               </div>
@@ -33,15 +25,15 @@
           </form>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="search-author-tab">
-          <form>
+          <form action="/search" method="POST">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Search for Author's name">
+              <input type="text" name="authors_query" class="form-control" placeholder="Search for Author's name">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
               </div>
             </div>
           </form>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
