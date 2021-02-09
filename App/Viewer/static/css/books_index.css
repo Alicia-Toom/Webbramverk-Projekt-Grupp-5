@@ -6,6 +6,11 @@
     width: 65%;
     background-color: #FFFFFF;
     padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    min-width: auto;
+    justify-content: center;
 }
 
 #book-index-container .indices {
@@ -34,7 +39,9 @@
 
 #book-index-container .entries {
     width: 800px;
-    padding-left: 100px;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #book-index-container .entries a {

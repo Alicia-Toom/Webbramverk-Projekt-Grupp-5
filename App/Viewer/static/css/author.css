@@ -198,7 +198,7 @@ figure {
 }
 
 img {
-    vertical-align: middle;
+    vertical-align: unset;
     border-style: none;
 }
 
@@ -625,6 +625,7 @@ pre code {
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
+    length: 50%;
 }
 
 .col {
@@ -1056,6 +1057,7 @@ pre code {
     .col-md-12 {
         flex: 0 0 100%;
         max-width: 100%;
+        text-wrap: unset;
     }
 
     .order-md-first {
@@ -10372,5 +10374,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #author-content {
-    background-image: linear-gradient(180deg, #1b1b1b, #F0F0F0 50%, #1b1b1b);	background-position: top left;	background-size: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.25); border-top: 1px solid rgba(255, 255, 255, 0.25)
+    background-image: linear-gradient(180deg, #1b1b1b, #D1D1D1 50%, #1b1b1b);	background-position: top left;	background-size: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.25); border-top: 1px solid rgba(255, 255, 255, 0.25)
+}
+
+#book-caption a {
+    color: #FFF;
 }

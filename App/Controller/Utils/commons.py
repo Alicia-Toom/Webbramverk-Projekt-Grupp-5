@@ -60,3 +60,11 @@ def compare_strings_in_lists(list_x, list_y):
             if x.lower() == y.lower():
                 return True
     return False
+
+
+def get_all_author_names():
+    pass
+
+
+def get_all_book_titles():
+    pass
