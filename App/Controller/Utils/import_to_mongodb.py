@@ -17,7 +17,6 @@ def import_jsons_as_books(path):
         if file.endswith(".json"):
             with open(os.path.join(path, file), encoding='utf-8') as f:
                 json_data = json.load(f)
-
                 cover_file = os.path.join(path, file.replace(".json", ".jpg"))
                 if os.path.exists(cover_file):
                     with open(cover_file, "rb") as c:  # read binary
