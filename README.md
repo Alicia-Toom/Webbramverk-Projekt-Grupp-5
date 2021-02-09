@@ -23,7 +23,12 @@ SECRET_KEY = ""
 
 
 ### First time:
-
+if you want a test user, change the value from false to true in the script.
 ```
-Run app.py
+run 'run_once.py'
+```
+
+### All set up and ready to go?
+```
+run app.py
 ```
