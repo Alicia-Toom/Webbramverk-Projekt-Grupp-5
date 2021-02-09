@@ -1,18 +1,21 @@
-{% extends 'base.html' %}
-
-{% block title %}
-404 Error - Page Not Found
+{% extends "base.html" %}
+{% block head %}
+    <title>Page not found</title>
+    <style>
+        #body-content {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #content {
+            background: black;
+        }
+    </style>
 {% endblock %}
 
 {% block content %}
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
-            <h1 class="pt-5 pb-2">Page not found (Error 404)</h1>
-            <p><a href="{{ url_for('index') }}">Go to search page</a></p>
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div class="card-body" id="body-content">
+            <img src="{{ url_for('static', filename='images/404.png')}}" width="95%", heigh="95%">
         </div>
     </div>
-</div>
-
-{% endblock %}
+{%  endblock %}
