@@ -2,6 +2,8 @@ import os
 
 from flask_sqlalchemy import SQLAlchemy
 
+from Controller.Utils.import_to_mongodb import import_to_mongodb
+from Controller.Utils.import_to_sqlalchemy import create_users
 from Viewer.Routes.authors_routes import authors
 from Viewer.Routes.books_routes import books
 
@@ -55,8 +57,6 @@ def index():
             return redirect(url_for('author', id=id))
         else:
             message = "No results"
-    # Import test users to database - should only be run once in development environment!
-    # create_users()
     return render_template(
         'index.html',
         form=form,
@@ -75,6 +75,7 @@ def author(id):
         return render_template('404.html'), 404
     else:
         return render_template('search.html', id=id, name=name, photo=photo)
+
 
 @app.errorhandler(404)
 def page_not_found(error):

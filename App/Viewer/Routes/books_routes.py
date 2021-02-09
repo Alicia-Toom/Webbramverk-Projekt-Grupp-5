@@ -21,6 +21,7 @@ def index():
 @books.route('/books/<book_id>')
 def book(book_id):
     book = Book.find(_id=ObjectId(book_id)).first_or_none()
+    #if book is not None:
     rec_books = []
     books = Book.find(genres=book.genres[0])
     while len(rec_books) < 4:
@@ -28,8 +29,9 @@ def book(book_id):
             if _['_id'] != book['_id']:
                 rec_books.append(_)
     shuffle(rec_books)
-
     return render_template('books/book.html', book=book, rec_books=rec_books)
+    #else:
+    #    abort(404)
 
 
 @books.route('/books/<book_id>/cover')
