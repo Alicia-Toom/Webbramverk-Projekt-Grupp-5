@@ -6347,37 +6347,6 @@ a.close.disabled {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 15;
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-}
-
-.carousel-indicators li {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 3px;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #fff;
-    background-clip: padding-box;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity 0.6s ease;
-}
-
 @media (prefers-reduced-motion: reduce) {
     .carousel-indicators li {
         transition: none;
@@ -10277,7 +10246,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-hide {
-    font: 0/0 a;
     color: transparent;
     text-shadow: none;
     background-color: transparent;
@@ -10401,4 +10369,8 @@ a.text-dark:hover, a.text-dark:focus {
         color: inherit;
         border-color: #dee2e6;
     }
+}
+
+#author-content {
+    background-image: linear-gradient(180deg, #1b1b1b, #F0F0F0 50%, #1b1b1b);	background-position: top left;	background-size: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.25); border-top: 1px solid rgba(255, 255, 255, 0.25)
 }
