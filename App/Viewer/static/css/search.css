@@ -1,0 +1,86 @@
+p {
+	#border: 3px solid #14213D;
+	padding: 30px 30px 30px 30px;
+
+}
+
+h1 {
+	color:black;
+    font-size:28px;
+	margin-left:5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	color:#000000;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+	margin-left:5%;
+
+}
+
+body {
+	background-color: #E5E5E5;
+}
+
+.center {
+	margin-left: 5%;
+
+}
+
+#wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 10px;
+
+}
+
+
+#authors {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+#authors td, #authors th {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#authors tr:nth-child(even){background-color: #f2f2f2;}
+
+#authors tr:hover {background-color: #ddd;}
+
+#authors th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#books {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+#books td, #books th {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#books tr:nth-child(even){background-color: #f2f2f2;}
+
+#books tr:hover {background-color: #ddd;}
+
+#books th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
