@@ -52,3 +52,16 @@ Inga större bekymmer som vi ser, så länge vi jobbar med issues och möten var
 Projektledare:
 Vi börjar utan projektledare, men eventuellt att vi delar in arbetsområdena som "backend", "frontend", "data".
 Eller att vi delar in den i flera delar som "mötesansvarig".
+
+
+				17:e December
+--------------------------------------------
+
+
+Vi enas om att vi skall göra Bokdatabasen.
+Även att vi skall använda både dokumentdatabas och relationsdatabas.
+För den första delen(Böcker och författare) kommer vi att använda oss utav dokumentdatbas.
+
+
+Vi kommer använda oss av grunddesignen från en omdesignad imdb hittad från deviantart.
+Med infosidan kommer vara liknande rottentomatoes (med lite ändring i layout och information).
