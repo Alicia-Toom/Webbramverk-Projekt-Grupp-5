@@ -4,7 +4,6 @@
 
 Vi enas om att vi skall göra Bokdatabasen.
 Även att vi skall använda både dokumentdatabas och relationsdatabas.
-
 För den första delen(Böcker och författare) kommer vi att använda oss utav dokumentdatbas.
 
 
