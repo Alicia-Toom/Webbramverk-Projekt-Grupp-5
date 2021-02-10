@@ -1,6 +1,6 @@
 from flask import Blueprint, session, render_template, request
 
-from Controller.Utils.commons import authenticated
+from Controller.commons import authenticated
 from Model.MySQL.Repository.users_repo import find_by_username, update_user
 
 profile = Blueprint('profile', __name__)

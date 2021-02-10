@@ -1,7 +1,7 @@
 from random import shuffle, sample
 from bson import ObjectId
 from flask import render_template, make_response, abort, Blueprint
-from Controller.Utils.commons import DataIndex, compare_strings_in_lists
+from Controller.commons import DataIndex, compare_strings_in_lists
 from Model.MongoDB.Models.books import Book
 
 books = Blueprint('books', __name__)
