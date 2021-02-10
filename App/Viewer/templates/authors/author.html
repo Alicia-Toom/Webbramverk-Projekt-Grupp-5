@@ -20,7 +20,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6"><img class="img-fluid d-block mx-auto" src="/authors/{{ author._id }}/photo"></div>
+          <div class="col-md-6">
+            <img class="img-fluid d-block mx-auto" src="/authors/{{ author._id }}/photo">
+          </div>
         </div>
       </div>
     </div>
@@ -70,19 +72,17 @@
           <div class="carousel-item {% if loop.first %} active {% endif %}">
             <div class="row">
             {% for book in row %}
-              {% if author.name == book.authors[0] %}
-                <div class="col-12 col-md d-flex align-items-center justify-content-center">
-                  <div class="carousel-item-book">
-                    <img src="/books/{{ book._id }}/cover" class="carousel-item-book-cover">
-                    <br>
-                    <br>
-                    <br>
-                    <div class="carousel-item-book-caption">
-                      <h5><a href="/books/{{ book._id }}" style="color: #FFF;">{{ book.title }}</a></h5>
-                    </div>
+              <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                <div class="carousel-item-book">
+                  <img src="/books/{{ book._id }}/cover" class="carousel-item-book-cover">
+                  <br>
+                  <br>
+                  <br>
+                  <div class="carousel-item-book-caption">
+                    <h5><a id="book-caption" href="/books/{{ book._id }}">{{ book.title }}</a></h5>
                   </div>
                 </div>
-              {% endif %}
+              </div>
             {% endfor %}
             </div>
           </div>
@@ -99,9 +99,9 @@
       </div>
     </div>
     {% block scripts %}
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     {% endblock %}
     <br>
     <br>
