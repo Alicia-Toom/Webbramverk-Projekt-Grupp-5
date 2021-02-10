@@ -8,7 +8,10 @@ Kommunikation:
 Discord och zoom för kontakt
 Börja med att gå igenom i grupp och sedan prova på mer parprogrammering.
 
-
+Miro.com
+Brainstrom: https://miro.com/app/board/o9J_lbIH_iI=/
+User Story: https://miro.com/app/board/o9J_lbc7b74=/
+Daily standup: https://miro.com/app/board/o9J_lbWPBfM=/
 
 Struktur:
 Lägga upp en mall för hur alla variabler skall se ut
