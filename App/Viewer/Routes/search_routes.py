@@ -54,7 +54,7 @@ def do_search():
         return render_template('/search.html', books=books)
 
     else:
-        authors_query =request.form['authors_query']
+        authors_query = request.form['authors_query']
         authors = Author.find(name=authors_query)
         return render_template('/search.html', authors=authors)
 

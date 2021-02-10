@@ -1,4 +1,4 @@
-from random import shuffle, sample
+from random import sample
 from bson import ObjectId
 from flask import render_template, make_response, abort, Blueprint
 from Controller.Utils.commons import DataIndex, compare_strings_in_lists
@@ -33,7 +33,6 @@ def book(book_id):
         recommended_books = matched_books + ([chosen_book] * (3 - len(matched_books)))
 
     return render_template('books/book.html', book=chosen_book, rec_books=recommended_books)
-
 
 
 @books.route('/books/<book_id>/cover')
