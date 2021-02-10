@@ -1,5 +1,7 @@
 import os
 from flask_sqlalchemy import SQLAlchemy
+
+from Controller.import_to_sqlalchemy import create_users
 from Viewer.Routes.authors_routes import authors
 from Viewer.Routes.books_routes import books
 from Viewer.Routes.search_routes import *
@@ -12,6 +14,7 @@ from Viewer.Routes.profile_routes import profile
 from Model.MongoDB.Models.books import Book
 from Model.MySQL.DB import SECRET_KEY
 from Model.MongoDB.Models.book_categories import *
+
 
 app = Flask(__name__)
 app.debug = True
@@ -40,6 +43,7 @@ def inject_base_context():
 
 @app.route('/')
 def index():
+    create_users(test_user=False)
     return render_template(
         'index.html',
         boty_carousel=Carousel(Book.find_by_array('ISBN', BEST_OF_THE_YEAR)),
