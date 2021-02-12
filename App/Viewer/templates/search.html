@@ -9,34 +9,29 @@
 {% block content %}
 <div id="wrapper">
 
-  <h1>Results for:</h1>
-  <h2>Author</h2>
-  <table id="authors" class="center">
+  <h1>Results for: {{ search_input }} </h1>
+  <table id="images" class="center">
   <tr>
-  <td><img src="{{ photo }}" alt="Photo: {{ name }}" width="50" height="50">{{ name }}</td>
-  </tr>
-  <tr>
-  <td><img src="{{ photo }}" alt="Photo: {{ name }}" width="50" height="50">{{ name }}</td>
-  </tr>
-  <tr>
-  <td><img src="{{ photo }}" alt="Photo: {{ name }}" width="50" height="50">{{ name }}</td>
+    <td><a href="/books/{{ books._id }}"><img src="/books/{{ books._id }}/cover" ></a> </td>
   </tr>
   </table>
-
-  <h2>Books</h2>
-
-  <table id="books" class="center">
-  <tr>
-  <td>Nameless b00k.</td>
-  </tr>
-  <tr>
-  <td>Nameless b00k.</td>
-  </tr>
-  <tr>
-  <td>Nameless b00k.</td>
-  </tr>
+  <table id="info">
+    <tr>
+      <td><h2> {{ books.title }} </h2> </td>
+    </tr>
+    <tr>
+      <td><h2> {{ books.authors }} </h2></td>
+    </tr>
+        <tr>
+      <td><h2> {{ books.publication_date }} </h2></td>
+    </tr>
+        <tr>
+      <td><h2> {{ books.book_type }} </h2></td>
+    </tr>
+         <tr>
+      <td></td>
+    </tr>
   </table>
-
 
 </div>
 

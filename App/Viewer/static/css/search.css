@@ -14,22 +14,29 @@ h1 {
 h2 {
 	color:#000000;
     font-size:24px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--bs-font-sans-serif);
 	margin-left:5%;
 
 }
 
 body {
-	background-color: #E5E5E5;
+	background-color: #black;
 }
+img {
+
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+}
+
 
 .center {
 	margin-left: 5%;
-
+	float: left;
 }
 
 #wrapper {
-    max-width: 70%;
+    max-width: 65%;
     margin: 0 auto;
     background: #FFFFFF;
     padding: 10px;
@@ -37,22 +44,21 @@ body {
 }
 
 
-#authors {
-  font-family: Arial, Helvetica, sans-serif;
+#images {
   border-collapse: collapse;
-  width: 60%;
+  width: 25%;
 }
 
-#authors td, #authors th {
-  border: 1px solid #ddd;
+#images td, #images th {
+
   padding: 20px;
 }
 
-#authors tr:nth-child(even){background-color: #f2f2f2;}
+#images tr:nth-child(even){background-color: #black;}
 
-#authors tr:hover {background-color: #ddd;}
+#images tr:hover {background-color: #ddd;}
 
-#authors th {
+#images th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -60,22 +66,21 @@ body {
   color: white;
 }
 
-#books {
-  font-family: Arial, Helvetica, sans-serif;
+#info {
   border-collapse: collapse;
   width: 60%;
 }
 
-#books td, #books th {
-  border: 1px solid #ddd;
+#info td, #info th {
+
   padding: 20px;
 }
 
-#books tr:nth-child(even){background-color: #f2f2f2;}
+#info tr:nth-child(even){background-color: #f2f2f2;}
 
-#books tr:hover {background-color: #ddd;}
+#info tr:hover {background-color: #f7f7f7;}
 
-#books th {
+#info th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -83,4 +88,7 @@ body {
   color: white;
 }
 
+table, th, td {
 
+  size: 30%;
+}
