@@ -41,13 +41,15 @@ Start your docker container, by opening your terminal and navigate to your proje
 ```
 docker-compose up
 ```
-if you want a test user, change the value from false to true in the script.  
-This will create your SQLite and Mongo database, and fill the database with books and authors.
+  
+This will create your Mongo database, and fill the database with books and authors.
 ```
-run 'run_once.py'
+run 'import_to_mongodb.py'
 ```
 
 ### All set up and ready to go?
+First time you run app its gonna create your userdatabase.  
+If you want a test user, change the value of "create user" to True
 ```
 run app.py
 ```

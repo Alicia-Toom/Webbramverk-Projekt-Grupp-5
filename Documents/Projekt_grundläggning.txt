@@ -1,0 +1,67 @@
+		------Projekt grundläggning------
+				  14:e December
+Projekt ideér:
+1. webscraping för jobb
+2. IMDB fast för böcker/ljudböcker
+
+Kommunikation:
+Discord och zoom för kontakt
+Börja med att gå igenom i grupp och sedan prova på mer parprogrammering.
+
+Miro.com
+Brainstrom: https://miro.com/app/board/o9J_lbIH_iI=/
+User Story: https://miro.com/app/board/o9J_lbc7b74=/
+Daily standup: https://miro.com/app/board/o9J_lbWPBfM=/
+
+Struktur:
+Lägga upp en mall för hur alla variabler skall se ut
+Alla mappr börjar med småbokstav, alla filnamn är i lowercase.
+
+
+
+GitHub:
+Gärna använda issues, sen skriva vem som tar änsvar på denna issue.
+
+
+Dagordning:
+Mötas nästan varje dag? klockan 9. Vi skriver på Miro.com på scrum möte.
+gå igenom pullrequests, om det fins.
+Uppdatera varandra vad vi gjort. 
+Parprogrammering? Framförallt vid nyinförning i projektet.
+
+
+
+Migrationsverktyg:
+Skapa all databas först, och migrationshantera eventuella ändringar och tillägg.
+
+
+
+Namngivning:
+Försöka ha beskrivande namn, undvika förkorta variabler
+
+
+
+Regler och struktur:
+Försök hålla er till samma struktur, och längden på rader.
+Vill man göra en kommentar, gör en sammanfattande kommentar om funktionen (inga onödiga kommentarer).
+Inte göra mer än vad man kommit överens om:
+Inga större bekymmer som vi ser, så länge vi jobbar med issues och möten varje dag innan vi börjar.
+
+
+
+Projektledare:
+Vi börjar utan projektledare, men eventuellt att vi delar in arbetsområdena som "backend", "frontend", "data".
+Eller att vi delar in den i flera delar som "mötesansvarig".
+
+
+				17:e December
+--------------------------------------------
+
+
+Vi enas om att vi skall göra Bokdatabasen.
+Även att vi skall använda både dokumentdatabas och relationsdatabas.
+För den första delen(Böcker och författare) kommer vi att använda oss utav dokumentdatbas.
+
+
+Vi kommer använda oss av grunddesignen från en omdesignad imdb hittad från deviantart.
+Med infosidan kommer vara liknande rottentomatoes (med lite ändring i layout och information).

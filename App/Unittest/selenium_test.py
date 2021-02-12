@@ -46,8 +46,14 @@ def sign_up(driver):
     password_field.send_keys(password)
     confirm_field.send_keys(password)
     submit.send_keys(Keys.RETURN)
-    time.sleep(5)
+    time.sleep(2)
     with app.app_context():
+        user_control = find_all()
+        if len(users) == len(user_control):
+            print("Unsuccessfully added user")
+        else:
+            print("Successfully added user")
+        print("Removing test user")
         delete_user(username)
 
 
@@ -96,14 +102,13 @@ def load_book_pages(driver):
 def main():
     driver = webdriver.Chrome('chromedriver.exe')
     time.sleep(2)
-    # login(driver)
-    # change_name(driver)
-    # sign_up(driver)
-    # load_author_pages(driver)
-    # load_book_pages(driver)
+    login(driver)
+    change_name(driver)
+    sign_up(driver)
+    load_author_pages(driver)
+    load_book_pages(driver)
     time.sleep(2)
     driver.close()
-
 
 
 if __name__ == '__main__':

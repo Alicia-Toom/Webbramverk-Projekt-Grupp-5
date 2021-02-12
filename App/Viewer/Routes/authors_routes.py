@@ -2,7 +2,7 @@ from bson import ObjectId
 from flask import render_template, Blueprint, make_response, abort
 from Model.MongoDB.Models.authors import Author
 from Model.MongoDB.Models.books import Book
-from Controller.Utils.commons import DataIndex, Carousel
+from Controller.commons import DataIndex, Carousel
 
 authors = Blueprint('authors', __name__)
 

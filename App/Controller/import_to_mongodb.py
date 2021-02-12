@@ -79,33 +79,33 @@ def download_author_photo(path):
 
 
 def import_to_mongodb():
-    folder_path = '../../Model/MongoDB/Models/authors_db/'
+    folder_path = '../Model/MongoDB/Models/authors_db/'
     print("Importing Authors images")
     download_author_photo(folder_path)
     print("Importing Authors ")
     import_jsons_as_authors(folder_path)
 
-    folder_path = '../../Model/MongoDB/Models/books_db'
+    folder_path = '../Model/MongoDB/Models/books_db'
     print("Importing Book covers")
     download_book_covers(folder_path)
     print("Importing Books")
     import_jsons_as_books(folder_path, Book)
 
-    folder_path = '../../Model/MongoDB/Models/books_db/best_of_the_year'
+    folder_path = '../Model/MongoDB/Models/books_db/best_of_the_year'
     print("Importing Book covers")
     download_book_covers(folder_path)
     print("Importing Best books of the year")
     import_jsons_as_books(folder_path, BestBook)
     import_jsons_as_books(folder_path, Book)
 
-    folder_path = '../../Model/MongoDB/Models/books_db/new_titles'
+    folder_path = '../Model/MongoDB/Models/books_db/new_titles'
     print("Importing Book covers")
     download_book_covers(folder_path)
     print("Importing New titles")
     import_jsons_as_books(folder_path, NewTitle)
     import_jsons_as_books(folder_path, Book)
 
-    folder_path = '../../Model/MongoDB/Models/books_db/hot_titles'
+    folder_path = '../Model/MongoDB/Models/books_db/hot_titles'
     print("Importing Book covers")
     download_book_covers(folder_path)
     print("Importing Hot titles")
